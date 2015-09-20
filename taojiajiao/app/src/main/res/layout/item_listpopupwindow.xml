@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/gray_600_n" android:gravity="center" android:id="@id/item_listpopupwindow_name" android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/item_listpopupwindow_img" android:layout_width="11.0dip" android:layout_height="9.0dip" android:layout_marginRight="25.0dip" android:src="@drawable/ic_checkmark_orange_n" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar_teacher_around" layout="@layout/titlebar_with_back" />
+    <RelativeLayout android:id="@id/rl_local_address" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_below="@id/titlebar_teacher_around">
+        <ImageView android:id="@id/iv_location" android:background="@drawable/ic_lbs_place_n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_edit_location" android:background="@drawable/ic_lbs_edit_n" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray_600_n" android:gravity="center_vertical" android:id="@id/tv_location" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/localling_n" android:layout_toRightOf="@id/iv_location" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_around_txt" android:background="@color/grey_white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_below="@id/rl_local_address">
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_500_n" android:gravity="center_vertical" android:id="@id/tv_around1" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:text="附近" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_500_n" android:gravity="center_vertical" android:id="@id/tv_around_teacher_distance" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_toRightOf="@id/tv_around1" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_500_n" android:gravity="center_vertical" android:id="@id/tv_around2" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="km以内共" android:layout_toRightOf="@id/tv_around_teacher_distance" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_500_n" android:gravity="center_vertical" android:id="@id/tv_around_teacher_num" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_toRightOf="@id/tv_around2" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_500_n" android:gravity="center_vertical" android:id="@id/tv_around3" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="名老师" android:layout_toRightOf="@id/tv_around_teacher_num" />
+    </RelativeLayout>
+    <ListView android:id="@id/lv_teacher" android:background="@color/white" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/grey_white" android:dividerHeight="1.0px" android:layout_below="@id/rl_around_txt" />
+    <RelativeLayout android:id="@id/rl_empty" android:background="@color/grey_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_local_address">
+        <ImageView android:id="@id/iv_empty" android:background="@drawable/ic_emotion_faint_n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="126.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray_400_n" android:id="@id/tv_empty1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="哎呀，附近还没有老师入驻" android:layout_below="@id/iv_empty" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray_400_n" android:id="@id/tv_empty2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="换个地址试试吧:)" android:layout_below="@id/tv_empty1" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

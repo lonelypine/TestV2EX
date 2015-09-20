@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/activity_changecity_titlebar" layout="@layout/titlebar_with_back" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/activity_changecity_currentContainer" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_below="@id/activity_changecity_titlebar">
+        <ImageView android:id="@id/activity_changecity_img_location" android:layout_width="12.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_position" />
+        <TextView android:textColor="@color/middle_black" android:id="@id/activity_changecity_txtlable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/current" android:layout_toRightOf="@id/activity_changecity_img_location" android:layout_alignTop="@id/activity_changecity_img_location" />
+        <TextView android:textColor="@color/middle_black" android:id="@id/activity_changecity_txt_currentCity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/activity_changecity_txtlable" />
+    </RelativeLayout>
+    <com.genshuixue.student.indexable.IndexableListView android:id="@id/activity_changecity_listView" android:background="@color/grey_white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:divider="@null" android:layout_below="@id/activity_changecity_currentContainer" />
+    <RelativeLayout android:id="@id/activity_changecity_noNetContaienr" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.genshuixue.student.view.NoNetWorkView android:id="@id/activity_changecity_noNetView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

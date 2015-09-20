@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/view_teacher_course_item_title_container" android:layout_width="fill_parent" android:layout_height="37.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray_600_n" android:id="@id/view_teacher_course_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="课程" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_400_n" android:id="@id/view_teacher_course_item_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/view_teacher_course_item_title" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/view_teacher_course_item_teachtime_container" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center_vertical" android:visibility="visible" android:layout_width="14.0dip" android:layout_height="12.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ic_detail_time_n" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/blue_n" android:gravity="center_vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="授课时间" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.genshuixue.student.view.MyListView android:id="@id/view_teacher_course_item_listview" android:visibility="visible" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/view_teacher_course_item_more_container" android:background="@drawable/white_to_line_heavy_n" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="37.0dip">
+        <View android:id="@id/view_teacher_course_item_more_line" android:background="@color/gray_200_n" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="13.0sp" android:textColor="@color/gray_400_n" android:id="@id/view_teacher_course_item_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多课程" />
+            <ImageView android:id="@id/view_teacher_course_item_more_img" android:layout_width="13.0dip" android:layout_height="8.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_arrow_down_gray_n" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/gray_100_n" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

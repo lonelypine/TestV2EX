@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_with_back" />
+    <ScrollView android:background="@color/im_group_detail" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/activity_im_group_detail_groupinfo_container" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/low_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="群信息" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/TextColorGray" android:id="@id/activity_im_group_detail_groupinfo_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="此群来自于钢琴培训课" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/low_black" android:layout_gravity="right" android:id="@id/activity_im_group_detail_groupinfo_data" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="2015-02-27" />
+                <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+            <com.genshuixue.student.view.MyListView android:id="@id/activity_im_group_detail_teacher" android:background="@color/white" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:divider="@color/stroke_grey" android:dividerHeight="1.0px" android:fastScrollEnabled="false" />
+            <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/activity_im_group_detail_all_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/low_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="群成员" />
+                <RelativeLayout android:id="@id/activity_im_group_detail_all_num_txt_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/low_black" android:id="@id/activity_im_group_detail_all_num_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50人" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_compile_normal" android:layout_toRightOf="@id/activity_im_group_detail_all_num_txt" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <com.genshuixue.student.view.MyGridView android:gravity="center" android:id="@id/activity_im_group_detail_all" android:background="@color/white" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:horizontalSpacing="10.0dip" android:numColumns="5" android:layout_below="@id/activity_im_group_detail_all_num_txt_container" />
+                <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" android:layout_below="@id/activity_im_group_detail_all" />
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="50.0dip">
+                <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/middle_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="消息免打扰" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/activity_im_group_detail_switch_control" android:layout_width="56.0dip" android:layout_height="31.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_switch_open" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/activity_im_group_detail_delete_imgroup" android:background="@drawable/shape_btn_delete_imgroup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="50.0dip" android:text="退出并删除群聊" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

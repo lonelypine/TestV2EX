@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_with_back" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_circle_corner_white_stroke_grey" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_margin="5.0dip">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/activity_safety_setting_reta_modifyLoginPassword" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textColor="@color/high_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/modifyLoginPassword" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_bluecompile_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:background="@color/stroke_grey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        <RelativeLayout android:id="@id/activity_safety_setting_reta_modifyPayPassword" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textColor="@color/high_black" android:id="@id/activity_safety_setting_txtlable_payPassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/modifyPayPassword" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_bluecompile_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_with_back_white" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/shape_circle_corner_orange_yellow" android:layout_width="fill_parent" android:layout_height="29.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_centerInParent="true">
+            <Button android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/activity_my_credit_btn_all" android:background="@drawable/shape_left_circle_corner_orange" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/all" android:layout_weight="1.0" />
+            <RelativeLayout android:id="@id/activity_my_credit_goodContainer" android:background="@drawable/shape_segment_middle_normal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0px" android:layout_marginBottom="1.0px" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/orange_yellow" android:id="@id/activity_my_credit_txtlable_good" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/goodCommentBracket" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/blue_text" android:gravity="center" android:id="@id/activity_my_credit_txt_goodNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ling" android:layout_toRightOf="@id/activity_my_credit_txtlable_good" android:layout_alignTop="@id/activity_my_credit_txtlable_good" android:layout_alignBottom="@id/activity_my_credit_txtlable_good" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/orange_yellow" android:gravity="center" android:id="@id/activity_my_credit_txtlable_goodRightBracket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rightBracket" android:layout_toRightOf="@id/activity_my_credit_txt_goodNum" android:layout_alignTop="@id/activity_my_credit_txt_goodNum" android:layout_alignBottom="@id/activity_my_credit_txt_goodNum" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView android:background="@color/orange_yellow" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <RelativeLayout android:id="@id/activity_my_credit_middleContainer" android:background="@drawable/shape_segment_middle_normal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0px" android:layout_marginBottom="1.0px" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/orange_yellow" android:id="@id/activity_my_credit_txtlable_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/middleCommentBracket" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/blue_text" android:gravity="center" android:id="@id/activity_my_credit_txt_middleNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ling" android:layout_toRightOf="@id/activity_my_credit_txtlable_middle" android:layout_alignTop="@id/activity_my_credit_txtlable_middle" android:layout_alignBottom="@id/activity_my_credit_txtlable_middle" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/orange_yellow" android:gravity="center" android:id="@id/activity_my_credit_txtlable_middleRightBracket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rightBracket" android:layout_toRightOf="@id/activity_my_credit_txt_middleNum" android:layout_alignTop="@id/activity_my_credit_txt_middleNum" android:layout_alignBottom="@id/activity_my_credit_txt_middleNum" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/activity_my_credit_lowContainer" android:background="@drawable/shape_right_circle_corner_white_stroke_orange" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/orange_yellow" android:id="@id/activity_my_credit_txtlable_low" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lowCommentBracket" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/blue_text" android:gravity="center" android:id="@id/activity_my_credit_txt_lowNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ling" android:layout_toRightOf="@id/activity_my_credit_txtlable_low" android:layout_alignTop="@id/activity_my_credit_txtlable_low" android:layout_alignBottom="@id/activity_my_credit_txtlable_low" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/orange_yellow" android:gravity="center" android:id="@id/activity_my_credit_txtlable_lowRightBracket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rightBracket" android:layout_toRightOf="@id/activity_my_credit_txt_lowNum" android:layout_alignTop="@id/activity_my_credit_txt_lowNum" android:layout_alignBottom="@id/activity_my_credit_txt_lowNum" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.genshuixue.student.view.LoadMoreListView android:id="@id/activity_my_credit_listView" android:background="@drawable/shape_circle_corner_white_stroke_grey" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+        <com.genshuixue.student.view.NoNetWorkView android:id="@id/activity_my_credit_noNetView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/activity_my_credit_noCommentContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/activity_my_credit_img_noComment" android:layout_width="58.0dip" android:layout_height="80.0dip" android:src="@drawable/ic_empty" android:layout_centerInParent="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/middle_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/dearAndNoComment" android:layout_below="@id/activity_my_credit_img_noComment" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

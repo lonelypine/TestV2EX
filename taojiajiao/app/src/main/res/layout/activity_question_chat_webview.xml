@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/activity_question_chat_title" layout="@layout/titlebar_with_back_share" />
+    <RelativeLayout android:id="@id/activity_question_chat_noNetContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.genshuixue.student.view.NoNetWorkView android:id="@id/activity_question_chat_noNetWorkView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.genshuixue.student.webview.MyWebView android:id="@id/activity_question_chat_web" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/activity_question_chat_bottom" android:layout_below="@id/activity_question_chat_title" />
+    <RelativeLayout android:id="@id/activity_question_chat_recording_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.genshuixue.student.view.LoadingView android:id="@id/activity_question_chat_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/activity_question_chat_bottom" android:layout_below="@id/activity_question_chat_title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/activity_question_chat_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <Button android:id="@id/activity_question_chat_set_mode_voice" android:background="@drawable/ic_speech_y" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" />
+            <Button android:id="@id/activity_question_chat_set_mode_keyboard" android:background="@drawable/chatting_setmode_keyboard_btn" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" />
+            <EditText android:textSize="14.0sp" android:textColor="@color/middle_black" android:gravity="center_vertical" android:id="@id/activity_question_answering_question_txt" android:background="@drawable/shape_circle_corner_white_stroke_grey" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip" android:hint="@string/askQuestionHint" android:layout_weight="1.0" android:inputType="textMultiLine" />
+            <RelativeLayout android:id="@id/activity_question_chat_btn_press_to_speak" android:background="@drawable/chat_press_speak_btn" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0">
+                <ImageView android:background="@drawable/ic_send_black" android:layout_width="12.0dip" android:layout_height="16.0dip" android:layout_marginRight="4.0dip" android:layout_toLeftOf="@id/activity_question_chat_hint_speck" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/activity_question_chat_hint_speck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_pushtotalk" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <Button android:id="@id/activity_question_chat_img" android:background="@drawable/ic_add_nor" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:onClick="more" />
+            <RelativeLayout android:id="@id/activity_question_chat_send" android:background="@drawable/style_btn_login" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="36.0dip" android:layout_marginRight="5.0dip">
+                <ImageView android:background="@drawable/ic_white_plane" android:layout_width="20.0dip" android:layout_height="18.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@id/ll_btn_container" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@id/activity_chat_picture" android:background="@drawable/shape_circle_corner_chat_button_nor" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+                <ImageView android:id="@id/activity_chat_img" android:background="@drawable/ic_photo_small" android:layout_width="32.0dip" android:layout_height="24.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:gravity="center" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="照片" android:layout_below="@id/activity_chat_picture" android:layout_alignLeft="@id/activity_chat_picture" android:layout_alignRight="@id/activity_chat_picture" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:id="@id/activity_chat_camera" android:background="@drawable/shape_circle_corner_chat_button_nor" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="80.0dip" android:layout_marginTop="10.0dip">
+                <ImageView android:id="@id/activity_chat_img_camera" android:background="@drawable/ic_camera_small" android:layout_width="32.0dip" android:layout_height="24.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:gravity="center" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="拍照" android:layout_below="@id/activity_chat_camera" android:layout_alignLeft="@id/activity_chat_camera" android:layout_alignRight="@id/activity_chat_camera" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.genshuixue.student.view.TeacherInfoShareView android:id="@id/activity_question_chat_shareView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+</RelativeLayout>

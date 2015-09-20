@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_with_back_white" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/activity_study_time_all_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textColor="@color/middle_blue" android:id="@id/activity_study_time_txt_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/all" android:singleLine="true" android:layout_centerVertical="true" />
+        <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/activity_study_time_monday_container" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textColor="@color/middle_black" android:id="@id/activity_study_time_txt_monday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/monday" android:singleLine="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/activity_study_time_img_monday" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/btn_checkbox_unchecked" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/activity_study_time_tuesday_container" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textColor="@color/middle_black" android:id="@id/activity_study_time_txt_tuesday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/tuesday" android:singleLine="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/activity_study_time_img_tuseday" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/btn_checkbox_unchecked" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/activity_study_time_wednesday_container" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textColor="@color/middle_black" android:id="@id/activity_study_time_txt_wednesday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/wednesday" android:singleLine="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/activity_study_time_img_wednesday" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/btn_checkbox_unchecked" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/activity_study_time_thursday_container" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textColor="@color/middle_black" android:id="@id/activity_study_time_txt_thursday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/thursday" android:singleLine="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/activity_study_time_img_thursday" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/btn_checkbox_unchecked" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/activity_study_time_friday_container" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textColor="@color/middle_black" android:id="@id/activity_study_time_txt_friday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/friday" android:singleLine="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/activity_study_time_img_friday" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/btn_checkbox_unchecked" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/activity_study_time_saturday_container" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textColor="@color/middle_black" android:id="@id/activity_study_time_txt_saturday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/saturday" android:singleLine="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/activity_study_time_img_saturday" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/btn_checkbox_unchecked" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/activity_study_time_sunday_container" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textColor="@color/middle_black" android:id="@id/activity_study_time_txt_sunday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sunday" android:singleLine="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/activity_study_time_img_sunday" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/btn_checkbox_unchecked" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <Button android:textColor="@color/white" android:id="@id/activity_study_time_btn_confirm" android:background="@drawable/style_btn_register" android:layout_width="140.0dip" android:layout_height="33.0dip" android:layout_marginTop="20.0dip" android:text="@string/confirm" />
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_with_back" />
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="33.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/activity_comment_course_goodContainer" android:background="@drawable/shape_circle_corner_white_stroke_orange" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/high_black" android:gravity="center|right" android:id="@id/activity_comment_course_txt_good" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/goodCommentColon" android:layout_weight="1.0" />
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/activity_comment_course_img_good" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_good_big" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/activity_comment_course_middleContainer" android:background="@drawable/shape_circle_corner_rice_white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:gravity="center|right" android:id="@id/activity_comment_course_txt_middle" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/middleCommentColon" android:layout_weight="1.0" />
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/activity_comment_course_img_middle" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_medium_big_gray" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/activity_comment_course_lowContainer" android:background="@drawable/shape_circle_corner_rice_white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:gravity="center|right" android:id="@id/activity_comment_course_txt_low" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/lowCommentColon" android:layout_weight="1.0" />
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/activity_comment_course_img_low" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_worse_big_gray" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/shape_circle_corner_white_stroke_grey" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip" android:minHeight="55.0dip" android:layout_toLeftOf="@id/activity_comment_course_img_camera">
+                    <EditText android:textSize="14.0sp" android:textColor="@color/middle_black" android:gravity="top" android:id="@id/activity_comment_course_edit_comment" android:background="@null" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="@string/commentYourTeacher" android:cursorVisible="true" android:maxLength="200" android:layout_weight="1.0" android:layout_alignParentTop="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/low_black" android:gravity="right" android:id="@id/activity_comment_course_txtlable_tips" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="200字" />
+                </LinearLayout>
+                <ImageView android:id="@id/activity_comment_course_img_camera" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/style_btn_upload_photo" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <com.genshuixue.student.view.MyGridView android:id="@id/activity_comment_course_grid" android:background="@color/white" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="3" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_margin="10.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/high_black" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="@string/accurateWithDiscribe" />
+                <RelativeLayout android:id="@id/activity_comment_course_btn1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/activity_comment_course_img1" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_bigstar_orange" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/activity_comment_course_btn2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/activity_comment_course_img2" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_bigstar_orange" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/activity_comment_course_btn3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/activity_comment_course_img3" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_bigstar_orange" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/activity_comment_course_btn4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/activity_comment_course_img4" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_bigstar_orange" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/activity_comment_course_btn5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/activity_comment_course_img5" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_bigstar_orange" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_margin="10.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/high_black" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="@string/teachAttitude" />
+                <RelativeLayout android:id="@id/activity_comment_course_btn6" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/activity_comment_course_img6" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_bigstar_orange" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/activity_comment_course_btn7" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/activity_comment_course_img7" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_bigstar_orange" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/activity_comment_course_btn8" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/activity_comment_course_img8" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_bigstar_orange" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/activity_comment_course_btn9" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/activity_comment_course_img9" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_bigstar_orange" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/activity_comment_course_btn10" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/activity_comment_course_img10" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_bigstar_orange" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_margin="10.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/high_black" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="@string/reflectSpeed" />
+                <RelativeLayout android:id="@id/activity_comment_course_btn11" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/activity_comment_course_img11" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_bigstar_orange" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/activity_comment_course_btn12" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/activity_comment_course_img12" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_bigstar_orange" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/activity_comment_course_btn13" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/activity_comment_course_img13" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_bigstar_orange" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/activity_comment_course_btn14" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/activity_comment_course_img14" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_bigstar_orange" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/activity_comment_course_btn15" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/activity_comment_course_img15" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_bigstar_orange" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/activity_comment_course_btn_publish" android:background="@drawable/style_btn_login" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_margin="10.0dip" android:text="@string/publishComment" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

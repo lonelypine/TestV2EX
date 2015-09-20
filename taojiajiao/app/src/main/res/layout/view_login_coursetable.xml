@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_circle_corner_white_stroke_orange" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="10.0dip">
+        <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/view_login_coursetable_btn_all" android:background="@drawable/shape_segment_left_selected" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0px" android:layout_marginTop="1.0px" android:layout_marginBottom="1.0px" android:text="@string/all" android:layout_weight="1.0" />
+        <TextView android:background="@color/orange_yellow" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <Button android:textSize="14.0sp" android:textColor="@color/orange_yellow" android:id="@id/view_login_coursetable_btn_waitLearning" android:background="@drawable/shape_segment_middle_normal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0px" android:layout_marginBottom="1.0px" android:text="@string/waitLearning" android:layout_weight="1.0" />
+        <TextView android:background="@color/orange_yellow" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <Button android:textSize="14.0sp" android:textColor="@color/orange_yellow" android:id="@id/view_login_coursetable_btn_waitConfirm" android:background="@drawable/shape_segment_middle_normal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0px" android:layout_marginBottom="1.0px" android:text="@string/waitConfirm" android:layout_weight="1.0" />
+        <TextView android:background="@color/orange_yellow" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <Button android:textSize="14.0sp" android:textColor="@color/orange_yellow" android:id="@id/view_login_coursetable_btn_waitPayfor" android:background="@drawable/shape_segment_right_nornal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0px" android:layout_marginRight="1.0px" android:layout_marginBottom="1.0px" android:text="@string/waitPayFor" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

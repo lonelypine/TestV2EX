@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/activity_webview_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/activity_webview_titleContainer" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:background="@drawable/ic_arrow_back_orange_n" android:layout_width="10.0dip" android:layout_height="17.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="14.0dip" />
+        <Button android:id="@id/activity_webview_btn_Back" android:background="@null" android:layout_width="88.0dip" android:layout_height="44.0dip" />
+        <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/activity_webview_txt_title" android:layout_width="200.0dip" android:layout_height="44.0dip" android:singleLine="true" android:layout_centerHorizontal="true" />
+        <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/activity_webview_btn_Back" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/blue_text" android:gravity="center" android:id="@id/activity_webview_txt_buyAagin" android:visibility="gone" android:layout_width="88.0dip" android:layout_height="44.0dip" android:text="@string/buyAgain" android:layout_alignParentRight="true" />
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/activity_webview_btn_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <Button android:id="@id/activity_webview_btn_share" android:background="@drawable/style_btn_share_black" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <Button android:id="@id/activity_webview_btn_fav" android:background="@drawable/ic_collect_black_normal" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/activity_webview_noNetContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/activity_webview_titleContainer">
+        <com.genshuixue.student.view.NoNetWorkView android:id="@id/activity_webview_noNetWorkView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.genshuixue.student.view.LoadingView android:id="@id/activity_webview_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="44.0dip" />
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/activity_webview_refreshView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/activity_webview_titleContainer">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.genshuixue.student.webview.MyWebView android:id="@id/activity_webview_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.genshuixue.liveplayer.LivePlayerVideoView android:id="@id/liveplayer_videoview" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+        </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <com.genshuixue.student.view.TeacherInfoShareView android:id="@id/activity_webview_shareView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+</RelativeLayout>

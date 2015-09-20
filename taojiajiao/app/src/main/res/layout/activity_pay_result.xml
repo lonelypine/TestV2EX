@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:background="@drawable/ic_arrow_back_orange_n" android:layout_width="10.0dip" android:layout_height="17.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="14.0dip" />
+        <Button android:id="@id/titlebar_with_back_payresult_btn_back" android:background="@null" android:layout_width="88.0dip" android:layout_height="44.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/middle_black" android:gravity="center" android:id="@id/titlebar_with_back_payresult_txt_title" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/payresult" android:singleLine="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/low_black" android:id="@id/titlebar_with_back_payresult_orderdetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/orderDetail" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="@color/low_black" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/titlebar_with_back_payresult_txt_title" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="220.0dip">
+        <ImageView android:id="@id/activity_payresult_img" android:layout_width="77.0dip" android:layout_height="77.0dip" android:src="@drawable/ic_pay_success" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/pay_result_txt" android:id="@id/activity_payresult_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="支付成功!" android:layout_below="@id/activity_payresult_img" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/middle_black" android:id="@id/activity_payresult_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/activity_payresult_txt" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/redDeeper" android:id="@id/activity_payresult_warn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/balance_warn" />
+    <RelativeLayout android:id="@id/activity_payresult_againpay" android:background="@drawable/shape_btn_login_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/activity_payresult_againpay_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/againpay" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/activity_payresult_cancelpay" android:background="@drawable/style_btn_cancle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/activity_payresult_cancelpay_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancelpay" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/activity_payresult_success" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <Button android:textSize="14.0sp" android:textColor="@color/orange_yellow" android:id="@id/activity_payresult_btn_yue" android:background="@drawable/shape_btn_yueclass_normal" android:layout_width="125.0dip" android:layout_height="40.0dip" android:text="@string/yuecalss" />
+        <TextView android:textColor="@color/middle_black" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/or" />
+        <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/activity_payresult_btn_pai" android:background="@drawable/shape_btn_login_normal" android:layout_width="125.0dip" android:layout_height="40.0dip" android:text="@string/paiclass" />
+    </LinearLayout>
+    <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/activity_payresult_btn_orderdetail" android:background="@drawable/shape_btn_login_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="20.0dip" android:text="@string/watchOrderdetail" />
+</LinearLayout>

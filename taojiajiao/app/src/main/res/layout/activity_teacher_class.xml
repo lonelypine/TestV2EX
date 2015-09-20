@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_with_back" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/activity_teacher_class_segmentContainer" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:textColor="@color/orange_yellow" android:gravity="center" android:id="@id/activity_teacher_class_txt_reportedableClass" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/reportedAbleClass" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/middle_black" android:gravity="center" android:id="@id/activity_teacher_class_txt_classHistory" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/classHistory" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true">
+            <TextView android:id="@id/activity_teacher_class_txtlable_reportedableClass" android:background="@color/orange_yellow" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0" />
+            <TextView android:id="@id/activity_teacher_class_txtlable_classHistory" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/activity_teacher_class_viewPager" android:background="@color/grey_white" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:flipInterval="30" />
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/view_calendar_week_noNetContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.genshuixue.student.view.NoNetWorkView android:id="@id/view_calendar_week_noNetWorkView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_week" android:background="@color/calendarweektop" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <RelativeLayout android:layout_width="54.0dip" android:layout_height="40.0dip">
+            <RelativeLayout android:id="@id/calendar_week_nowweek" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="14.0sp" android:textColor="@color/calendarweek" android:id="@id/calendar_week_thisweek" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/calendarweek" android:id="@id/calendar_week_thisweekday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/calendar_week_thisweek" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <View android:background="@color/drawCashPressedColor" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0">
+                <View android:background="@color/drawCashPressedColor" android:visibility="invisible" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/middle_black" android:id="@id/morning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/morning" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/calendarweekleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/morningTime" android:layout_below="@id/morning" android:layout_centerHorizontal="true" />
+                <View android:background="@color/drawCashPressedColor" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0">
+                <View android:background="@color/drawCashPressedColor" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+                <TextView android:textColor="@color/middle_black" android:id="@id/afternoon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/afternoon" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/calendarweekleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/afternoonTime" android:layout_below="@id/afternoon" android:layout_centerHorizontal="true" />
+                <View android:background="@color/drawCashPressedColor" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0">
+                <View android:background="@color/drawCashPressedColor" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/middle_black" android:id="@id/night" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/night" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/calendarweekleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nightTime" android:layout_below="@id/night" android:layout_centerHorizontal="true" />
+                <View android:background="@color/drawCashPressedColor" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/nextweekrl" android:background="@color/calendarweektop" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/calendarweek" android:gravity="center_horizontal" android:id="@id/activity_alendar_week_nextweek" android:layout_width="53.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="@color/calendarweek" android:gravity="center_horizontal" android:id="@id/calendar_week_nextweekday" android:layout_width="53.0dip" android:layout_height="wrap_content" android:layout_below="@id/activity_alendar_week_nextweek" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="@color/calendarweek" android:id="@id/activity_calendar_week_returnthisweek" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/returnTheWeek" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/activity_calendar_week_lv" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:divider="#00000000" android:dividerHeight="0.0dip" android:layout_above="@id/nextweekrl" android:layout_below="@id/ll_week" android:fastScrollEnabled="false" />
+</RelativeLayout>

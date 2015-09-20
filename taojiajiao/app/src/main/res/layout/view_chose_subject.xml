@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_choose_subject_container_ll" android:background="@color/transment_black_low" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/view_choose_subject_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="54.0dip">
+        <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+        <TextView android:gravity="center" android:id="@id/view_choose_subject_label" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/chooseSubject" />
+        <TextView android:textColor="@color/orangeText" android:gravity="center" android:id="@id/view_choose_subject_txt" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="sss" android:layout_toRightOf="@id/view_choose_subject_label" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_small_arrow_up_gary" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="14.0">
+            <ListView android:id="@id/view_choose_subject_list" android:background="@color/white" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/view_choose_subject_sublist_container" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="19.0">
+            <ListView android:id="@id/view_choose_subject_sublist" android:background="@color/grey_white" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

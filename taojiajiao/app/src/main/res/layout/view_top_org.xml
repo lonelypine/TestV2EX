@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/teacher_experience" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_whiteshadows" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+        <ImageView android:id="@id/view_top_org_img_avatar" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="10.0dip" />
+        <RelativeLayout android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/high_black" android:id="@id/view_top_org_txtName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/middle_black" android:id="@id/view_top_org_txt_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/view_top_org_txtName" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/middle_black" android:id="@id/view_top_org_txtTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/view_top_org_txt_intro" />
+        </RelativeLayout>
+        <ImageView android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_small_shallowchoose_normal" />
+    </LinearLayout>
+    <View android:id="@id/view_top_org_view_click" android:layout_width="fill_parent" android:layout_height="85.0dip" />
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_with_back" />
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/teacherName" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/middle_black" android:gravity="center_vertical" android:id="@id/activity_pay_txt_teacherName" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+                </LinearLayout>
+                <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:text="@string/courseDetails" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/middle_black" android:id="@id/activity_pay_txt_courseDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                </LinearLayout>
+                <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/comboDetail" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/middle_black" android:gravity="center_vertical" android:id="@id/activity_pay_txt_comboDetail" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+                </LinearLayout>
+                <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:gravity="center" android:id="@id/activity_pay_txt_payTotalhint" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/payTotalPrice" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/orange_yellow" android:gravity="center_vertical" android:id="@id/activity_pay_txt_payTotal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/activity_pay_txt_payTotalhint" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/discountRed" android:gravity="center" android:id="@id/activity_pay_txt_discount" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/activity_pay_txt_discountHint" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:gravity="center" android:id="@id/activity_pay_txt_discountHint" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="@string/discountHint" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/choosePayType" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/shape_circle_corner_white_stroke_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip">
+                <RelativeLayout android:focusable="true" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <Spinner android:id="@id/activity_pay_spinner_discount_type" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginRight="10.0dip" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="10.0dip" android:layout_height="6.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/ic_lightgray_dropdown" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/activity_pay_rl_discount_container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <EditText android:textSize="14.0sp" android:textColor="@color/middle_black" android:gravity="center_vertical" android:id="@id/activity_pay_edit_discount" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="80.0dip" android:hint="@string/enterDiscount" android:singleLine="true" android:inputType="number" />
+                    <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/activity_pay_btn_use_discount" android:background="@drawable/shape_btn_low_blue_normal" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/useDiscount" android:layout_alignParentRight="true" />
+                    <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/activity_pay_rl_exhibition_container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/middle_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="可用奖学金:" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/discountRed" android:gravity="center_vertical" android:id="@id/activity_pay_txt_exhibition_remind" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_alignParentRight="true" />
+                    <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/middle_black" android:gravity="center" android:id="@id/activity_pay_txtlable_accountBalance" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/accountBalance" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/high_black" android:gravity="center" android:id="@id/activity_pay_txt_accountBalance" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/activity_pay_txtlable_accountBalance" />
+                </RelativeLayout>
+                <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/activity_pay_balancePay_container" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                    <ImageView android:id="@id/activity_pay_img_pig" android:layout_width="36.0dip" android:layout_height="33.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/ic_pigs" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/middle_black" android:id="@id/activity_pay_txtlable_balancePay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/banlancePay" android:layout_toRightOf="@id/activity_pay_img_pig" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/orange_yellow" android:id="@id/activity_pay_txt_balancePay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/activity_pay_txtlable_balancePay" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/activity_pay_check_balancePay" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/btn_checkbox_unchecked" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/activity_pay_aLiContainer" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                    <ImageView android:id="@id/activity_pay_img_aliPay" android:background="@drawable/ic_paypal" android:layout_width="32.0dip" android:layout_height="24.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/middle_black" android:id="@id/activity_pay_txtlable_aliPay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aliPay" android:layout_toRightOf="@id/activity_pay_img_aliPay" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/orange_yellow" android:id="@id/activity_pay_txt_aliPay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/activity_pay_txtlable_aliPay" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/activity_pay_check_aliPay" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/btn_checkbox_unchecked" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/activity_pay_cardContainer" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                    <ImageView android:id="@id/activity_pay_img_cardPay" android:background="@drawable/ic_unionpal" android:layout_width="32.0dip" android:layout_height="24.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/middle_black" android:id="@id/activity_pay_txtlable_cardPay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cardPay" android:layout_toRightOf="@id/activity_pay_img_cardPay" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/orange_yellow" android:id="@id/activity_pay_txt_cardPay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/activity_pay_txtlable_cardPay" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/activity_pay_check_cardPay" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/btn_checkbox_unchecked" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/activity_pay_ll_passwordContainer" android:background="@drawable/shape_circle_corner_white_stroke_grey" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                <EditText android:gravity="center" android:id="@id/activity_pay_edit_balancePayPassword" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="@string/inputPayPassword" android:cursorVisible="true" android:maxLength="6" android:inputType="numberPassword" />
+            </LinearLayout>
+            <Button android:textColor="@color/white" android:id="@id/activity_pay_btn_pay" android:background="@drawable/style_btn_login" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="5.0dip" android:text="@string/pay" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.genshuixue.student.view.gestureimageview.GestureImageView android:id="@id/activity_view_question_pic_iv" android:background="@color/transment_black_high" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" android:layout_above="@id/activity_view_question_pic_ll" giv:max-scale="10.0" giv:min-scale="0.5" giv:strict="true" xmlns:giv="http://schemas.polites.com/android" />
+    <LinearLayout android:id="@id/activity_view_question_pic_ll" android:background="@color/high_black" android:layout_width="fill_parent" android:layout_height="60.0dip" android:baselineAligned="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/activity_view_question_pic_back" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/style_btn_viewimage_back" android:scaleType="centerInside" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/activity_view_question_pic_rotate" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/style_btn_viewimage_revolve" android:scaleType="centerInside" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/activity_view_question_pic_delete_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/activity_view_question_pic_delete" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/style_btn_viewimage_delete" android:scaleType="centerInside" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

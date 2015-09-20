@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <Button android:background="@drawable/ic_arrow_back_orange_n" android:layout_width="10.0dip" android:layout_height="17.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="14.0dip" />
+        <Button android:id="@id/activity_chat_history_btn_back" android:background="@null" android:layout_width="88.0dip" android:layout_height="44.0dip" />
+        <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/activity_chat_history_txt_title" android:layout_width="260.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" />
+        <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        <TextView android:textColor="@color/middle_blue" android:gravity="center|right" android:id="@id/activity_chat_history_txt_confirm" android:paddingRight="10.0dip" android:visibility="invisible" android:layout_width="88.0dip" android:layout_height="fill_parent" android:text="@string/toTeahcerDetail" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/activity_chat_history_btn_group" android:background="@drawable/ic_groups_gray_big" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.genshuixue.student.view.LoadingView android:id="@id/activity_chat_history_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="44.0dip" />
+    <RelativeLayout android:id="@id/rl_chat1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="44.0dip">
+        <com.genshuixue.student.view.LoadMoreHeadListView android:scrollbarStyle="outsideOverlay" android:id="@id/activity_chat_history_list" android:background="@color/grey_white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="10.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/middle_black" android:gravity="center" android:id="@id/view_no_order_txtlable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="40.0dip" android:text="@string/noOrders" />
+    <com.genshuixue.student.view.SearchOrRecommendView android:id="@id/view_no_order_recommentView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/view_no_order_txtlable" android:layout_centerHorizontal="true" />
+</RelativeLayout>

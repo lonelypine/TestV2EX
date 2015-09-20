@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/activity_show_comment_photo_titleContainer" android:background="@color/transment_black_middle" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <Button android:background="@drawable/ic_arrow_back_orange_n" android:layout_width="10.0dip" android:layout_height="17.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="14.0dip" />
+        <Button android:id="@id/activity_show_comment_photo_btn_back" android:background="@null" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/activity_show_comment_photo_txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/activity_show_comment_photo_img_delete" android:background="@drawable/ic_delete_white" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <Button android:id="@id/activity_show_comment_photo_btn_delete" android:background="@null" android:layout_width="88.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager android:id="@id/view_pager" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/activity_show_comment_photo_titleContainer" />
+</RelativeLayout>

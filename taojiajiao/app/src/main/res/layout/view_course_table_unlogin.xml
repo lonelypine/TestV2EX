@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_100_n" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/gray_400_n" android:gravity="center" android:id="@id/view_course_table_unlogin_txt_describe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <Button android:textSize="16.0sp" android:textColor="@drawable/txt_n_b_p_w_n" android:id="@id/view_course_table_unlogin_btn_register" android:background="@drawable/btn_register_n" android:layout_width="110.0dip" android:layout_height="40.0dip" android:text="注册" />
+        <View android:layout_width="20.0dip" android:layout_height="1.0dip" />
+        <Button android:textSize="16.0sp" android:textColor="@drawable/txt_n_o_p_w_n" android:id="@id/view_course_table_unlogin_btn_login" android:background="@drawable/btn_login_n" android:layout_width="110.0dip" android:layout_height="40.0dip" android:text="登录" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

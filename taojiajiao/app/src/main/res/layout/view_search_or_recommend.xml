@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/shape_bottom_circle_corner_white_stroke_grey" android:paddingBottom="13.0dip" android:layout_width="260.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/view_search_or_recommend_txtlableViewContainer" android:layout_width="fill_parent" android:layout_height="33.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/middle_black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/searchSuitSelfTeacherToMananerYourCourse" />
+        </LinearLayout>
+        <Button android:textColor="@color/white" android:id="@id/view_search_or_recommend_btn_search" android:background="@drawable/style_btn_login" android:layout_width="170.0dip" android:layout_height="34.0dip" android:text="@string/searchTeacher" android:layout_below="@id/view_search_or_recommend_container" android:layout_centerHorizontal="true" />
+        <Button android:textColor="@color/white" android:id="@id/view_search_or_recommend_btn_recommend" android:background="@drawable/style_btn_register" android:layout_width="170.0dip" android:layout_height="34.0dip" android:layout_marginTop="5.0dip" android:text="@string/recommendForMe" android:layout_below="@id/view_search_or_recommend_btn_search" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/view_search_or_recommend_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-3.0dip" android:layout_below="@id/view_search_or_recommend_txtlableViewContainer" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="42.0dip" android:layout_height="58.0dip" android:layout_marginTop="13.0dip" android:src="@drawable/ic_character_teacher" />
+            <ImageView android:layout_width="50.0dip" android:layout_height="39.0dip" android:layout_marginLeft="20.0dip" android:layout_marginBottom="8.0dip" android:src="@drawable/ic_big_shallow_search" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

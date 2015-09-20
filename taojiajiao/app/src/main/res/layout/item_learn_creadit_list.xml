@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_centerVertical="true">
+        <TextView android:textSize="18.0sp" android:id="@id/item_learn_credit_opType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提问" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/DarkGrey" android:id="@id/item_learn_credit_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="昨天8:00" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:id="@id/item_learn_credit_credit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="+3" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

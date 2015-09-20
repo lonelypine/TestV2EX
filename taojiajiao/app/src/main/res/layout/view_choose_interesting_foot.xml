@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/gray_600_n" android:id="@id/view_choose_interesting_foot_txt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:singleLine="true" />
+    <com.genshuixue.student.view.MyGridView android:id="@id/view_choose_interesting_foot_grid" android:background="@color/gray_200_n" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:horizontalSpacing="1.0px" android:verticalSpacing="1.0px" android:numColumns="4" android:layout_below="@id/view_choose_interesting_foot_txt" />
+    <Button android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:id="@id/view_choose_interesting_foot_btn" android:background="@drawable/btn_c3_s2_lh_bg_w_n" android:layout_width="150.0dip" android:layout_height="34.0dip" android:layout_marginTop="25.0dip" android:layout_marginBottom="32.0dip" android:text="添加其他感兴趣的科目" android:layout_below="@id/view_choose_interesting_foot_grid" android:layout_centerHorizontal="true" />
+</RelativeLayout>

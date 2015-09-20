@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bjhl="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/headview_index_new_rl_bannerContainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.genshuixue.student.view.MyGallery android:id="@id/headview_index_new_gallery_banner" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:unselectedAlpha="1.0" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/headview_index_new_ll_dotContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:layout_marginBottom="10.0dip" android:layout_alignBottom="@id/headview_index_new_gallery_banner" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip">
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="1.0dip" android:paddingTop="15.0dip" android:paddingRight="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/headview_index_new_rl_cate1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/headview_index_new_rl_cate1_img" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_index_artsports_n" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/gray_400_n" android:gravity="center" android:id="@id/headview_index_new_rl_cate1_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="艺术 体育" android:layout_below="@id/headview_index_new_rl_cate1_img" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/headview_index_new_rl_cate2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/headview_index_new_rl_cate2_img" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_index_lifeinterest_n" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/gray_400_n" android:gravity="center" android:id="@id/headview_index_new_rl_cate2_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="生活 兴趣" android:layout_below="@id/headview_index_new_rl_cate2_img" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/headview_index_new_rl_cate3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/headview_index_new_rl_cate3_img" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_index_studyabroad_n" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/gray_400_n" android:gravity="center" android:id="@id/headview_index_new_rl_cate3_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="出国 留学" android:layout_below="@id/headview_index_new_rl_cate3_img" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/headview_index_new_rl_cate4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/headview_index_new_rl_cate4_img" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_index_elementaryschool_n" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/gray_400_n" android:gravity="center" android:id="@id/headview_index_new_rl_cate4_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="学前 小学" android:layout_below="@id/headview_index_new_rl_cate4_img" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="1.0dip" android:paddingTop="10.0dip" android:paddingRight="1.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/headview_index_new_rl_cate5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/headview_index_new_rl_cate5_img" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_index_highschool_n" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/gray_400_n" android:gravity="center" android:id="@id/headview_index_new_rl_cate5_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="初中 高中" android:layout_below="@id/headview_index_new_rl_cate5_img" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/headview_index_new_rl_cate6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/headview_index_new_rl_cate6_img" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_index_college_n" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/gray_400_n" android:gravity="center" android:id="@id/headview_index_new_rl_cate6_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="大学考试" android:layout_below="@id/headview_index_new_rl_cate6_img" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/headview_index_new_rl_cate7" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/headview_index_new_rl_cate7_img" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_index_languagetraining_n" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/gray_400_n" android:gravity="center" android:id="@id/headview_index_new_rl_cate7_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="语言培训" android:layout_below="@id/headview_index_new_rl_cate7_img" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/headview_index_new_rl_cate8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/headview_index_new_rl_cate8_img" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_index_more_n" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/gray_400_n" android:gravity="center" android:id="@id/headview_index_new_rl_cate8_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="更多科目" android:layout_below="@id/headview_index_new_rl_cate8_img" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:id="@id/headview_index_new_focus_line" android:background="@color/gray_200_n" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/headview_index_new_focus_container" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="34.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/headview_index_new_focus_container_img" android:layout_width="76.0dip" android:layout_height="14.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_index_genshuix_n" />
+            <View android:background="@color/gray_200_n" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="34.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/headview_index_new_focus_txt_container1" android:layout_width="fill_parent" android:layout_height="68.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="34.0dip">
+                        <com.genshuixue.student.util.BorderTextView android:textSize="10.0sp" android:textColor="@color/orange_600_n" android:id="@id/headview_index_new_focus_txt_container_information1" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" bjhl:borderColor="@color/orange_600_n" bjhl:borderWidth="2" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/gray_500_n" android:gravity="center_vertical" android:id="@id/headview_index_new_focus_txt_container_txt1" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="34.0dip">
+                        <com.genshuixue.student.util.BorderTextView android:textSize="10.0sp" android:textColor="@color/orange_600_n" android:id="@id/headview_index_new_focus_txt_container_information2" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" bjhl:borderColor="@color/orange_600_n" bjhl:borderWidth="2" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/gray_500_n" android:gravity="center_vertical" android:id="@id/headview_index_new_focus_txt_container_txt2" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/headview_index_new_focus_txt_container2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="34.0dip">
+                    <com.genshuixue.student.util.BorderTextView android:textSize="10.0sp" android:textColor="@color/orange_600_n" android:id="@id/headview_index_new_focus_txt_container_information3" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" bjhl:borderColor="@color/orange_600_n" bjhl:borderWidth="2" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/gray_500_n" android:gravity="center_vertical" android:id="@id/headview_index_new_focus_txt_container_txt3" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="5.0dip" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="@drawable/ic_white_shadow_small" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="63.0dip" android:layout_marginTop="10.0dip">
+        <RelativeLayout android:gravity="center" android:id="@id/headview_index_new_rl_surround" android:background="@drawable/white_to_line_heavy_n" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/headview_index_new_img_surround" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/ic_index_aroundteacher_n" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/headview_index_new_img_surround" android:layout_centerVertical="true">
+                <TextView android:textSize="15.0sp" android:textColor="@color/gray_500_n" android:id="@id/headview_index_new_surround_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周边老师" android:singleLine="true" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/gray_400_n" android:id="@id/headview_index_new_surround_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="发现身边好老师" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/gray_200_n" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <RelativeLayout android:gravity="center" android:id="@id/headview_index_new_rl_ask_publish" android:background="@drawable/white_to_line_heavy_n" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/headview_index_new_img_ask_publish" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/ic_index_findteacher_n" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/headview_index_new_img_ask_publish" android:layout_centerVertical="true">
+                <TextView android:textSize="15.0sp" android:textColor="@color/gray_500_n" android:id="@id/headview_index_new_ask_publish_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我要提问" android:singleLine="true" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/gray_400_n" android:id="@id/headview_index_new_ask_publish_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="难题名师帮你解" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

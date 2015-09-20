@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_calendar_week_rl" android:background="@color/calendarweektop" android:layout_width="fill_parent" android:layout_height="57.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="57.0dip">
+        <View android:id="@id/item_calendar_tv_top" android:background="@color/drawCashPressedColor" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+        <View android:id="@id/item_calendar_tv_bottom" android:background="@color/drawCashPressedColor" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        <View android:id="@id/item_calendar_tv_right" android:background="@color/drawCashPressedColor" android:layout_width="1.0px" android:layout_height="57.0dip" android:layout_alignParentRight="true" />
+        <RelativeLayout android:id="@id/rlcalendar" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_centerInParent="true">
+            <TextView android:textSize="14.0sp" android:textColor="@color/middle_black" android:id="@id/tv_weekday" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/calendarweekleft" android:id="@id/tv_calendar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_weekday" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

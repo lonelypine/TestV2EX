@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_circle_corner_white" android:paddingTop="23.0dip" android:layout_width="270.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/gray_600_n" android:gravity="center" android:id="@id/dialog_fillout_invitecode_txt_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" android:text="填写邀请码" android:singleLine="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/gray_400_n" android:gravity="center" android:id="@id/dialog_fillout_invitecode_txt_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="邀请码的主人可以得到奖励哟" />
+    <EditText android:textSize="13.0sp" android:textColor="@color/gray_400_n" android:id="@id/dialog_fillout_invitecode_edit_invite" android:background="@drawable/shape_circle_corner_white_stroke_grey" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:hint="填写邀请码" android:cursorVisible="true" android:singleLine="true" />
+    <View android:background="@color/gray_200_n" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/dialog_fillout_invitecode_ll_btnContainer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/gray_500_n" android:gravity="center" android:id="@id/dialog_fillout_invitecode_txt_left" android:background="@drawable/btn_c3_lb_s0_bg_w" android:layout_width="0.0dip" android:layout_height="44.0dip" android:text="确定" android:layout_weight="1.0" />
+        <View android:background="@color/gray_200_n" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/orange_n" android:gravity="center" android:id="@id/dialog_fillout_invitecode_txt_right" android:background="@drawable/btn_c3_rb_s0_bg_w" android:layout_width="0.0dip" android:layout_height="44.0dip" android:text="取消" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

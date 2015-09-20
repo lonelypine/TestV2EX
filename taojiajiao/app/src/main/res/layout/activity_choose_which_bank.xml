@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:background="@drawable/ic_arrow_back_orange_n" android:layout_width="10.0dip" android:layout_height="17.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="14.0dip" />
+        <Button android:id="@id/titlebar_with_back_choosewhichbankcard_btn_back" android:background="@null" android:layout_width="88.0dip" android:layout_height="44.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/TextColorGray" android:gravity="center" android:id="@id/titlebar_with_back_choosewhichbankcard_txt_title" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/chooseBank" android:singleLine="true" android:layout_centerHorizontal="true" />
+        <TextView android:background="@color/low_black" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/titlebar_with_back_choosewhichbankcard_btn_back" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/activity_choosewhichbank_titleContainer" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/activity_choosewhichbank_ll_canlendar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="@color/orange_yellow" android:gravity="center" android:id="@id/activity_choosewhichbank_txt_xinyong" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="信用卡" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="@color/TextColorGray" android:gravity="center" android:id="@id/activity_choosewhichbank_txt_bank" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="银行卡" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true">
+            <TextView android:id="@id/activity_choosewhichbank_txtlable_cal_xingyong" android:background="@color/orange_yellow" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0" />
+            <TextView android:id="@id/activity_choosewhichbank_txtlable_cal_bank" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:id="@id/activity_choosewhichbank_txtlable_line" android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ListView android:id="@id/activity_choosewhichbank_creditcard_listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ListView android:id="@id/activity_choosewhichbank_bankcard_listview" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#eeffffff" android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.genshuixue.student.view.CircleImageView android:id="@id/view_teacher_info_avatar" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/ic_detail_grahpic_n" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/gray_500_n" android:id="@id/view_teacher_info_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="dd" android:singleLine="true" android:layout_toRightOf="@id/view_teacher_info_avatar" android:layout_alignTop="@id/view_teacher_info_avatar" />
+    <ImageView android:id="@id/view_teacher_info_gender" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_detail_woman_color_n" android:layout_toRightOf="@id/view_teacher_info_name" android:layout_alignBottom="@id/view_teacher_info_name" />
+    <TextView android:textColor="@color/gray_500_n" android:id="@id/view_teacher_info_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="dd" android:singleLine="true" android:layout_below="@id/view_teacher_info_name" android:layout_alignLeft="@id/view_teacher_info_name" />
+</RelativeLayout>

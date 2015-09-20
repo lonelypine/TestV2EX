@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/activity_edittext_container" android:background="@drawable/shape_circle_corner_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_circle_corner_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/middle_black" android:gravity="center" android:id="@id/activity_edittext_txtlable" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/userNickname" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/shape_circle_corner_white_stroke_grey" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <EditText android:textSize="14.0sp" android:textColor="@color/middle_black" android:gravity="center" android:id="@id/activity_edittext_edit" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:cursorVisible="true" android:singleLine="true" android:maxLength="20" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <Button android:textSize="14.0sp" android:textColor="@color/middle_black" android:id="@id/activity_edittext_btn_cancle" android:background="@drawable/style_btn_drawcash" android:layout_width="0.0dip" android:layout_height="33.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/cancle" android:layout_weight="1.0" />
+            <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/activity_edittext_btn_confirm" android:background="@drawable/style_btn_login" android:layout_width="0.0dip" android:layout_height="33.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/confirm" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

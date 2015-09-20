@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dialog_sign_in_re" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/dialog_sign_in_pic" android:layout_width="299.0dip" android:layout_height="207.0dip" android:src="@drawable/ic_credit" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="32.0sp" android:textColor="@color/white" android:id="@id/dialog_sign_in_credit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="+4学分" android:layout_alignBottom="@id/dialog_sign_in_pic" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="@color/white" android:id="@id/dialog_sign_in_credit_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="签到获得4学分" android:layout_below="@id/dialog_sign_in_credit" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="@color/orangeText" android:id="@id/dialog_sign_in_credit_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="签到获得4学分" android:layout_below="@id/dialog_sign_in_credit_hint" android:layout_centerHorizontal="true" />
+</RelativeLayout>

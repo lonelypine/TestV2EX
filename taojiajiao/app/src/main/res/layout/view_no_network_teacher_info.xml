@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/gray_100_n" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/gray_400_n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网络出错了，请点击按钮重新加载" />
+    <Button android:textSize="16.0sp" android:textColor="@color/gray_500_n" android:id="@id/view_no_network_teacher_info_reload" android:background="@drawable/shape_c0_s1_lh_bg_bg" android:layout_width="190.0dip" android:layout_height="40.0dip" android:layout_marginTop="30.0dip" android:text="重新加载" />
+</LinearLayout>

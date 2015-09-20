@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/white_to_line_heavy_n" android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.genshuixue.student.view.CircleImageView android:id="@id/item_connect_child_img_avatar" android:background="@drawable/ic_system_admin" android:layout_width="37.0dip" android:layout_height="37.0dip" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/gray_600_n" android:gravity="center_vertical" android:id="@id/item_connect_child_txt_name" android:layout_width="wrap_content" android:layout_height="55.0dip" android:layout_marginLeft="15.0dip" android:text="敖老师" android:singleLine="true" android:layout_toRightOf="@id/item_connect_child_img_avatar" android:layout_centerVertical="true" />
+    <View android:background="@color/gray_200_n" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignLeft="@id/item_connect_child_txt_name" android:layout_alignParentBottom="true" />
+</RelativeLayout>

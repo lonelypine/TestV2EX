@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.genshuixue.student.view.SegmentedGroup android:gravity="center" android:orientation="horizontal" android:id="@id/view_message_segment" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <RadioButton android:textSize="14.0sp" android:id="@id/view_message_segment_btn_message" android:layout_width="75.0dip" android:layout_height="28.0dip" android:checked="true" android:text="消息" style="@style/RadioButton" />
+        <RadioButton android:textSize="14.0sp" android:id="@id/view_message_segment_btn_contact" android:layout_width="75.0dip" android:layout_height="28.0dip" android:text="联系人" style="@style/RadioButton" />
+    </com.genshuixue.student.view.SegmentedGroup>
+    <TextView android:id="@id/view_messages_txtlable_line" android:background="@color/gray_200_n" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/view_message_segment" />
+    <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/view_messages_viewPager" android:background="@color/grey_white" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:flipInterval="30" android:layout_below="@id/view_messages_txtlable_line" />
+    <com.genshuixue.student.view.NewUnloginCourseTableView android:id="@id/view_messages_login" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/view_messages_txtlable_line" />
+</RelativeLayout>

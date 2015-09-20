@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_chat_expression_expression" android:background="@color/gray_100_n" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_chat_expression_iv_expression" android:background="@color/gray_100_n" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+    <TextView android:layout_gravity="center" android:id="@id/item_chat_expression_tv_expression" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

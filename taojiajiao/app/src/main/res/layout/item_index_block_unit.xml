@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="145.0dip" android:layout_height="141.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:imagecontrol="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_alignParentRight="true">
+        <RelativeLayout android:id="@id/item_index_block_unit_top_container" android:background="@color/gray_300_n" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="82.0dip">
+            <ImageView android:gravity="center" android:id="@id/item_index_block_unit_course_img" android:background="@drawable/ic_emotion_default_bg_n" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/item_index_block_unit_course_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxLines="3" />
+            <ImageView android:id="@id/item_index_block_unit_play_flag" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <com.genshuixue.student.view.RoundImageView android:id="@id/item_index_block_unit_teacher_avatar" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="-25.0dip" android:scaleType="centerInside" android:layout_alignBottom="@id/item_index_block_unit_top_container" android:layout_alignParentRight="true" imagecontrol:border_thickness="2.0dip" imagecontrol:border_outside_color="@color/white" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="59.0dip" android:layout_below="@id/item_index_block_unit_top_container">
+            <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:ellipsize="end" android:id="@id/item_index_block_unit_primary_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="90.0dip" android:text="上课" android:singleLine="true" android:layout_toLeftOf="@id/item_index_block_unit_teacher_avatar" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/gray_400_n" android:ellipsize="end" android:id="@id/item_index_block_unit_second_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:text="6月30日" android:singleLine="true" android:layout_below="@id/item_index_block_unit_primary_tag" android:layout_alignParentLeft="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <ImageView android:id="@id/item_index_block_unit_hot_flag" android:layout_width="24.0dip" android:layout_height="12.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/ic_index_hot_n" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:id="@id/item_index_block_unit_cover_view" android:background="@drawable/style_btn_black15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/dialog_loading" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/shape_circle_corner_white" android:layout_width="250.0dip" android:layout_height="65.0dip">
+        <ImageView android:id="@id/dialog_loading_img_loading" android:background="@anim/anim_loading" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="45.0dip" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/high_black" android:id="@id/dialog_loading_txt_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip" android:text="@string/loading" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <Button android:textSize="14.0sp" android:textColor="@color/orange_yellow" android:id="@id/view_order_segment_btn_all" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/all" android:layout_weight="1.0" />
+        <TextView android:background="@color/stroke_grey" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_order_segment_linear_waitAppoint" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:id="@id/view_order_segment_txt_waitAppoint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/inProgress" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/blue_text" android:id="@id/view_order_segment_txt_waitAppointNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero" />
+        </LinearLayout>
+        <TextView android:background="@color/stroke_grey" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_order_segment_linear_unPay" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:id="@id/view_order_segment_txt_unPay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/waitPayFor" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/blue_text" android:id="@id/view_order_segment_txt_unPayNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero" />
+        </LinearLayout>
+        <TextView android:background="@color/stroke_grey" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_order_segment_linear_waitComment" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:id="@id/view_order_segment_txt_waitComment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/waitComment" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/blue_text" android:id="@id/view_order_segment_txt_waitCommentNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

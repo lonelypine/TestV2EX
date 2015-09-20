@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="20.0dip">
+        <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:id="@id/item_question_my_avatar" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/item_question_my_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="学霸" android:maxLines="2" android:layout_toLeftOf="@id/item_question_my_time" android:layout_toRightOf="@id/item_question_my_avatar" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/DarkGrey" android:id="@id/item_question_my_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="1小时前" android:layout_alignTop="@id/item_question_my_avatar" android:layout_alignParentRight="true" />
+        <TextView android:textColor="@color/orangeText" android:id="@id/item_question_my_subject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="高一音乐（2学分）" android:layout_below="@id/item_question_my_time" android:layout_alignRight="@id/item_question_my_time" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <ImageView android:id="@id/item_question_my_img" android:layout_width="85.0dip" android:layout_height="85.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/ic_week_pre" android:scaleType="centerInside" android:layout_alignParentLeft="true" />
+        <TextView android:ellipsize="end" android:id="@id/item_question_my_txt" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="neirongsdfslkanvlans;asdfsdf" android:maxLines="4" android:layout_toRightOf="@id/item_question_my_img" android:layout_alignTop="@id/item_question_my_img" />
+        <TextView android:textColor="@color/DarkGrey" android:gravity="bottom" android:id="@id/item_question_my_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip" android:text="待抢答" android:layout_below="@id/item_question_my_txt" android:layout_alignParentRight="true" />
+        <TextView android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_below="@id/item_question_my_status" />
+        <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/item_adapter_search_teacher_result_ll_container"
+        android:background="@drawable/bg_whiteshadows"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginRight="10.0dip">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="124.0dip">
+            <ImageView
+                android:id="@id/item_search_course_result_img_poster"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip" />
+            <TextView
+                android:textSize="16.0sp"
+                android:textColor="@color/high_black"
+                android:id="@id/item_search_course_result_txt_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:text="这里是标题标题"
+                android:maxLines="2"
+                android:singleLine="true" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/item_search_course_result_tag_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:layout_below="@id/item_search_course_result_txt_title"
+                android:layout_alignLeft="@id/item_search_course_result_txt_title">
+                <TextView
+                    android:textSize="12.0sp"
+                    android:textColor="@color/white"
+                    android:id="@id/item_search_course_result_tag1"
+                    android:background="@color/blue_mid"
+                    android:paddingLeft="3.0dip"
+                    android:paddingRight="3.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16.0dip"
+                    android:text="海淀区" />
+                <TextView
+                    android:textSize="12.0sp"
+                    android:textColor="@color/blue_mid"
+                    android:id="@id/item_search_course_result_tag2"
+                    android:background="@drawable/shape_white_bg_blue_strock"
+                    android:paddingLeft="3.0dip"
+                    android:paddingRight="3.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="乐闻谢尔" />
+                <ImageView
+                    android:id="@id/item_search_course_result_tag3"
+                    android:layout_width="63.0dip"
+                    android:layout_height="16.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:src="@drawable/ic_ketui" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="64.0dip"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:textSize="14.0sp"
+                    android:ellipsize="end"
+                    android:layout_gravity="center_vertical"
+                    android:id="@id/item_search_course_result_txt_content1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="测试测试测试"
+                    android:singleLine="true"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:textSize="14.0sp"
+                    android:ellipsize="end"
+                    android:layout_gravity="center_vertical"
+                    android:id="@id/item_search_course_result_txt_content2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="测试测试测试"
+                    android:singleLine="true"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:textSize="14.0sp"
+                    android:ellipsize="end"
+                    android:layout_gravity="center_vertical"
+                    android:id="@id/item_search_course_result_txt_content3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="测试测试测试"
+                    android:singleLine="true"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@id/item_search_course_result_ll_hint_container"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="24.0dip">
+            <ImageView
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/ic_prompt_orange" />
+            <TextView
+                android:textSize="12.0sp"
+                android:textColor="@color/low_black"
+                android:id="@id/item_search_course_result_ll_hint_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:text="哈哈好"
+                android:singleLine="true" />
+        </LinearLayout>
+        <RelativeLayout
+            android:background="#fff7f7f7"
+            android:layout_width="fill_parent"
+            android:layout_height="34.0dip">
+            <TextView
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:textColor="@color/orange_yellow_teacher_detail"
+                android:id="@id/item_search_course_result_txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="￥60000"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:textSize="14.0sp"
+                android:textColor="@color/low_black"
+                android:id="@id/item_search_course_result_txt_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="原价:60000"
+                android:layout_toRightOf="@id/item_search_course_result_txt_price"
+                android:layout_centerVertical="true" />
+            <Button
+                android:textSize="14.0sp"
+                android:textColor="@color/white"
+                android:id="@id/item_search_course_result_btn_buy"
+                android:background="@drawable/style_btn_comment"
+                android:layout_width="80.0dip"
+                android:layout_height="27.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:textSize="10.0sp"
+        android:textColor="@color/white"
+        android:id="@id/item_search_course_result_txt_activity"
+        android:background="#fff95710"
+        android:paddingLeft="5.0dip"
+        android:paddingTop="2.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingBottom="2.0dip"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12.0dip"
+        android:layout_alignParentRight="true" />
+    <ImageView
+        android:id="@id/item_search_course_result_img_triangle"
+        android:visibility="gone"
+        android:layout_width="4.0dip"
+        android:layout_height="6.0dip"
+        android:src="@drawable/ic_triangle_orange"
+        android:layout_toLeftOf="@id/item_search_course_result_txt_activity" />
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/parent" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/activity_teacher_comments_titleContaienr" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <Button android:background="@drawable/ic_arrow_back_orange_n" android:layout_width="10.0dip" android:layout_height="17.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="14.0dip" />
+        <Button android:id="@id/activity_teacher_comments_btn_back" android:background="@null" android:layout_width="88.0dip" android:layout_height="44.0dip" />
+        <TextView android:textSize="18.0sp" android:id="@id/activity_teacher_comments_txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="18.0sp" android:id="@id/activity_teacher_comments_txt_clickTitle" android:layout_width="100.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/activity_teacher_comments_img_icon" android:layout_width="12.0dip" android:layout_height="5.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/ic_gray_down" android:layout_toRightOf="@id/activity_teacher_comments_txt_title" android:layout_centerVertical="true" />
+        <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.genshuixue.student.view.MyScrollView android:id="@id/activity_teacher_comments_stickyScroll" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/activity_teacher_comments_titleContaienr">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="107.0dip" android:weightSum="5.0">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="7.0" android:layout_weight="2.0">
+                            <LinearLayout android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="3.0">
+                                <TextView android:layout_gravity="bottom" android:id="@id/activity_teacher_comments_tv_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="0" style="@style/text_black_high_18" />
+                                <TextView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/score" style="@style/text_black_high_14" />
+                            </LinearLayout>
+                            <LinearLayout android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="2.0">
+                                <ImageView android:id="@id/activity_teacher_comments_average_rb" android:layout_width="88.0dip" android:layout_height="16.0dip" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="2.0">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total" style="@style/text_black_low_14" />
+                                <TextView android:id="@id/activity_teacher_comments_tv_rating_people_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" style="@style/text_black_low_14" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_suffix" style="@style/text_black_low_14" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:weightSum="3.0" android:layout_weight="3.0">
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                                <TextView android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/comment_match" style="@style/text_black_high_14" />
+                                <ImageView android:id="@id/activity_teacher_comments_match_rb" android:layout_width="66.0dip" android:layout_height="12.0dip" />
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                                    <TextView android:id="@id/activity_teacher_comments_tv_match" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" style="@style/text_black_high_14" />
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/score" style="@style/text_black_high_14" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                                <TextView android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/comment_manner" style="@style/text_black_high_14" />
+                                <ImageView android:id="@id/activity_teacher_comments_manner_rb" android:layout_width="66.0dip" android:layout_height="12.0dip" />
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                                    <TextView android:id="@id/activity_teacher_comments_tv_manner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" style="@style/text_black_high_14" />
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/score" style="@style/text_black_high_14" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                                <TextView android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/comment_response" style="@style/text_black_high_14" />
+                                <ImageView android:id="@id/activity_teacher_comments_response_rb" android:layout_width="66.0dip" android:layout_height="12.0dip" />
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                                    <TextView android:id="@id/activity_teacher_comments_tv_response" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" style="@style/text_black_high_14" />
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/score" style="@style/text_black_high_14" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <View android:background="@color/middle_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/activity_teacher_comments_container" android:tag="sticky" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <LinearLayout android:gravity="center" android:id="@id/activity_teacher_comments_allContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/orange_yellow" android:id="@id/activity_teacher_comments_txt_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all" />
+                    </LinearLayout>
+                    <TextView android:background="@color/stroke_grey" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/activity_teacher_comments_goodContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:id="@id/activity_teacher_comments_txt_good" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/goodComent" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/blue_text" android:id="@id/activity_teacher_comments_txt_goodNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zeroWithBracket" />
+                    </LinearLayout>
+                    <TextView android:background="@color/stroke_grey" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/activity_teacher_comments_middleContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:id="@id/activity_teacher_comments_txt_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/normalComent" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/blue_text" android:id="@id/activity_teacher_comments_txt_middleNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zeroWithBracket" />
+                    </LinearLayout>
+                    <TextView android:background="@color/stroke_grey" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/activity_teacher_comments_lowContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:id="@id/activity_teacher_comments_txt_low" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lowComment" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/blue_text" android:id="@id/activity_teacher_comments_txt_lowNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zeroWithBracket" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/middle_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/activity_teacher_comments_noCommentContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_centerInParent="true">
+                        <ImageView android:layout_width="58.0dip" android:layout_height="80.0dip" android:src="@drawable/ic_empty" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/middle_black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_comments" android:singleLine="true" />
+                    </LinearLayout>
+                    <com.genshuixue.student.view.ScrollLoadmoreListView android:id="@id/activity_teacher_comments_listView" android:background="@drawable/shape_circle_corner_white_stroke_grey" android:padding="5.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/activity_teacher_comments_top_container" android:tag="sticky" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:tag="sticky" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <LinearLayout android:gravity="center" android:id="@id/activity_teacher_comments_top_allContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/orange_yellow" android:id="@id/activity_teacher_comments_top_txt_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all" />
+                    </LinearLayout>
+                    <TextView android:background="@color/stroke_grey" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/activity_teacher_comments_top_goodContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:id="@id/activity_teacher_comments_top_txt_good" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/goodComent" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/blue_text" android:id="@id/activity_teacher_comments_top_txt_goodNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zeroWithBracket" />
+                    </LinearLayout>
+                    <TextView android:background="@color/stroke_grey" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/activity_teacher_comments_top_middleContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:id="@id/activity_teacher_comments_top_txt_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/normalComent" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/blue_text" android:id="@id/activity_teacher_comments_top_txt_middleNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zeroWithBracket" />
+                    </LinearLayout>
+                    <TextView android:background="@color/stroke_grey" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/activity_teacher_comments_top_lowContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:id="@id/activity_teacher_comments_top_txt_low" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lowComment" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/blue_text" android:id="@id/activity_teacher_comments_top_txt_lowNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zeroWithBracket" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/middle_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </FrameLayout>
+    </com.genshuixue.student.view.MyScrollView>
+    <com.genshuixue.student.view.TeacherCommentsTypeView android:id="@id/activity_teacher_comments_typeView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/activity_teacher_comments_titleContaienr" />
+</RelativeLayout>

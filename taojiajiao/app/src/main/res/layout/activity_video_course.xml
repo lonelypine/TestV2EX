@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_100_n" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_with_back" />
+    <RelativeLayout android:id="@id/activity_video_course_noNetContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.genshuixue.student.view.NoNetWorkView android:id="@id/activity_video_course_noNetWorkView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/activity_video_course_noVideoContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="62.0dip" android:layout_height="115.0dip" android:src="@drawable/ic_empty" />
+        <TextView android:textColor="@color/DarkGrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/noVideoCourse" />
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/activity_video_course_refreshView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.genshuixue.student.view.LoadMoreListView android:scrollbarStyle="outsideOverlay" android:id="@id/activity_video_course_list" android:background="@color/gray_100_n" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/gray_100_n" android:dividerHeight="10.0dip" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

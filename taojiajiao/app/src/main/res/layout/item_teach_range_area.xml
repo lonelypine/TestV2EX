@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/high_black" android:gravity="center" android:id="@id/item_teach_range_area_txt_name" android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_centerVertical="true" />
+    <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

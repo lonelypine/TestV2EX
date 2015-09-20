@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:orientation="vertical" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_with_back" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/shape_circle_corner_white_stroke_grey" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_margin="10.0dip">
+        <RelativeLayout android:textColor="@color/low_black" android:id="@id/activity_forget_pass_one_rl_chooseCountry" android:layout_width="80.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/high_black" android:gravity="center" android:id="@id/activity_forget_pass_one_txt_countryNum" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="+86" android:layout_toLeftOf="@id/activity_forget_pass_one_txtlabe_arrow" android:layout_alignParentLeft="true" />
+            <TextView android:id="@id/activity_forget_pass_one_txtlabe_arrow" android:background="@drawable/ic_lightgray_down" android:layout_width="7.0dip" android:layout_height="4.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:background="@color/stroke_grey" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <com.genshuixue.student.view.TextWatchEditText android:textSize="16.0sp" android:textColor="@color/middle_black" android:id="@id/activity_forget_pass_one_edit_aacount" android:background="@null" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:hint="请输入手机号" android:singleLine="true" android:inputType="phone" />
+    </LinearLayout>
+    <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/activity_forget_pass_one_btn_getCode" android:background="@drawable/shape_circle_corner_transparent_orange" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="获取验证码" />
+</LinearLayout>

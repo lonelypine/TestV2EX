@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/gray_100_n" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.genshuixue.student.view.CallbackScrollView android:id="@id/activity_teacher_info_v2_scrollView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="44.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/activity_teacher_info_v2_headContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:id="@id/activity_teacher_info_v2_ll_tab1" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="36.0dip">
+                <View android:id="@id/activity_teacher_info_v2_view1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <RelativeLayout android:id="@id/activity_teacher_info_v2_scrollTab1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/gray_600_n" android:gravity="center" android:id="@id/activity_teacher_info_v2_scrollTab1_hint" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="主页" android:layout_centerInParent="true" />
+                    <View android:id="@id/activity_teacher_info_v2_scrollTab1_line" android:background="@color/orange_n" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_alignLeft="@id/activity_teacher_info_v2_scrollTab1_hint" android:layout_alignRight="@id/activity_teacher_info_v2_scrollTab1_hint" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/activity_teacher_info_v2_scrollTab2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/gray_500_n" android:gravity="center" android:id="@id/activity_teacher_info_v2_scrollTab2_hint" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="课程" android:layout_centerInParent="true" />
+                    <View android:id="@id/activity_teacher_info_v2_scrollTab2_line" android:background="@color/orange_n" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_alignLeft="@id/activity_teacher_info_v2_scrollTab2_hint" android:layout_alignRight="@id/activity_teacher_info_v2_scrollTab2_hint" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/activity_teacher_info_v2_scrollTab3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/gray_500_n" android:gravity="center" android:id="@id/activity_teacher_info_v2_scrollTab3_hint" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="相册" android:layout_centerInParent="true" />
+                    <View android:id="@id/activity_teacher_info_v2_scrollTab3_line" android:background="@color/orange_n" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_alignLeft="@id/activity_teacher_info_v2_scrollTab3_hint" android:layout_alignRight="@id/activity_teacher_info_v2_scrollTab3_hint" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <View android:id="@id/activity_teacher_info_v2_view2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ImageView android:background="@color/gray_200_n" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/activity_teacher_info_v2_scrllTabContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/activity_teacher_info_v2_img_ad" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+        </LinearLayout>
+    </com.genshuixue.student.view.CallbackScrollView>
+    <com.genshuixue.student.view.LoadingChrysanthemumView android:id="@id/activity_teacher_info_v2_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="44.0dip" />
+    <LinearLayout android:id="@id/activity_teacher_info_v2_tabContainer" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="44.0dip">
+        <View android:id="@id/activity_teacher_info_v2_view3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <RelativeLayout android:id="@id/activity_teacher_info_v2_tab1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/gray_600_n" android:gravity="center" android:id="@id/activity_teacher_info_v2_tab1_hint" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="主页" android:layout_centerInParent="true" />
+            <View android:id="@id/activity_teacher_info_v2_tab1_line" android:background="@color/orange_n" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_alignLeft="@id/activity_teacher_info_v2_tab1_hint" android:layout_alignRight="@id/activity_teacher_info_v2_tab1_hint" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/activity_teacher_info_v2_tab2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/gray_500_n" android:gravity="center" android:id="@id/activity_teacher_info_v2_tab2_hint" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="课程" android:layout_centerInParent="true" />
+            <View android:id="@id/activity_teacher_info_v2_tab2_line" android:background="@color/orange_n" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_alignLeft="@id/activity_teacher_info_v2_tab2_hint" android:layout_alignRight="@id/activity_teacher_info_v2_tab2_hint" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/activity_teacher_info_v2_tab3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/gray_500_n" android:gravity="center" android:id="@id/activity_teacher_info_v2_tab3_hint" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="相册" android:layout_centerInParent="true" />
+            <View android:id="@id/activity_teacher_info_v2_tab3_line" android:background="@color/orange_n" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_alignLeft="@id/activity_teacher_info_v2_tab3_hint" android:layout_alignRight="@id/activity_teacher_info_v2_tab3_hint" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View android:id="@id/activity_teacher_info_v2_view4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/activity_teacher_info_v2_blackTitleContainer" android:background="@color/white_teacher_detial" android:clickable="false" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <Button android:id="@id/activity_teacher_info_v2_btn_down" android:background="@drawable/ic_detail_arrow_white_n" android:layout_width="10.0dip" android:layout_height="17.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="14.0dip" />
+        <Button android:id="@id/activity_teacher_info_v2_btn_up" android:background="@drawable/ic_detail_arrow_back_orange_n" android:layout_width="10.0dip" android:layout_height="17.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="14.0dip" />
+        <Button android:id="@id/activity_teacher_info_v2_btn_back" android:background="@null" android:layout_width="88.0dip" android:layout_height="44.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/gray_600_n" android:id="@id/activity_teacher_info_v2_txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:layout_marginRight="44.0dip" android:singleLine="true" android:layout_centerInParent="true" />
+        <View android:id="@id/activity_teacher_info_v2_titleLine" android:background="@color/gray_200_n" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/activity_teacher_info_v2_titleTabShadow" android:background="@color/gray_200_n" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="80.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/activity_teacher_info_v2_bottomContainer" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/activity_teacher_info_v2_customService" android:background="@drawable/transment_white_95_to_line_heavy_n" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:background="@color/gray_200_n" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@id/activity_teacher_info_v2_customService_img" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_detail_collect_n" android:layout_centerVertical="true" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/collect_n" android:layout_toRightOf="@id/activity_teacher_info_v2_customService_img" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/activity_teacher_info_v2_consultTeacher" android:background="@drawable/transment_white_95_to_line_heavy_n" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@id/activity_teacher_info_v2_consultTeacher_img" android:layout_width="19.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_detail_chat_n" android:layout_centerVertical="true" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/chat_n" android:layout_toRightOf="@id/activity_teacher_info_v2_consultTeacher_img" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/gray_200_n" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/activity_teacher_info_v2_quickBuy" android:background="@drawable/transment_white_95_to_line_heavy_n" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@id/activity_teacher_info_v2_share_img" android:layout_width="19.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_detail_share_n" android:layout_centerVertical="true" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/share_n" android:layout_toRightOf="@id/activity_teacher_info_v2_share_img" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/gray_200_n" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.genshuixue.student.view.TeacherInfoShareView android:id="@id/activity_teacher_info_v2_shareView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/activity_teacher_info_backToTop" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="60.0dip" android:src="@drawable/ic_top_black_n" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

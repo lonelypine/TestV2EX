@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/view_record_bg" android:background="#96ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/view_record_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/view_record_img_anim" android:background="@drawable/bg_big_circle_orange_tr" android:layout_width="288.0dip" android:layout_height="288.0dip" android:layout_centerInParent="true" />
+        <TextView android:textColor="@color/gray_500_n" android:id="@id/view_record_txt_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/view_record_img_anim" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/view_record_speech_container" android:background="@drawable/ic_big_speech_y" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_centerInParent="true">
+            <TextView android:textColor="@color/gray_500_n" android:id="@id/view_record_txt_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="周一" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="周二" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="周三" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="周四" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="周五" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="周六" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="周日" android:layout_weight="1.0" />
+    </LinearLayout>
+    <GridView android:gravity="center" android:id="@id/fragment_lesson_calendar_gv_week" android:background="@color/stroke_grey" android:paddingLeft="0.0dip" android:paddingTop="1.0px" android:paddingRight="-2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:horizontalSpacing="1.0px" android:verticalSpacing="1.0px" android:numColumns="7" />
+</LinearLayout>

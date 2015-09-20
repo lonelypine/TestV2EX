@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fragment_index_new_ll_topContainer" android:background="@color/orange_yellow_teacher_detail" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fragment_index_new_ll_cityContainer" android:background="@color/orange_yellow_teacher_detail" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/fragment_index_new_txtCity" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="北京" />
+            <ImageView android:layout_width="9.0dip" android:layout_height="6.0dip" android:layout_margin="5.0dip" android:src="@drawable/ic_white_dropdown" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_circle_corner12_orange" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="12.0dip" android:layout_height="13.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ic_search_white_small" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/fragment_index_new_editSearch" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="搜索学科或教师名字" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/fragment_index_new_btn_barcode" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:layout_width="45.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_scanning_white" android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:id="@id/fragment_index_new_listView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/fragment_index_new_ll_topContainer" />
+    <RelativeLayout android:id="@id/fragment_index_new_toSignIn_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="61.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/fragment_index_new_toSignIn" android:background="@color/orange_yellow_transparent" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="@string/toSignInHint" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="8.0dip" android:layout_height="13.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_arrow_white_small" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="44.0dip" android:layout_height="28.0dip" android:layout_marginLeft="20.0dip" android:layout_marginBottom="-7.0dip" android:src="@drawable/ic_mascot3" android:layout_above="@id/fragment_index_new_toSignIn" />
+    </RelativeLayout>
+</RelativeLayout>

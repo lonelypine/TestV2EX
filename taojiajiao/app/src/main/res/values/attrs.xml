@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="fadeDuration" format="integer" />
+    <attr name="placeholderImage" format="reference" />
+    <attr name="placeholderImageScaleType" format="string" />
+    <attr name="retryImage" format="reference" />
+    <attr name="retryImageScaleType" format="string" />
+    <attr name="failureImage" format="reference" />
+    <attr name="failureImageScaleType" format="string" />
+    <attr name="progressBarImage" format="reference" />
+    <attr name="progressBarImageScaleType" format="string" />
+    <attr name="progressBarAutoRotateInterval" format="integer" />
+    <attr name="actualImageScaleType" format="string" />
+    <attr name="backgroundImage" format="reference" />
+    <attr name="overlayImage" format="reference" />
+    <attr name="pressedStateOverlayImage" format="reference" />
+    <attr name="roundAsCircle" format="boolean" />
+    <attr name="roundedCornerRadius" format="dimension" />
+    <attr name="roundTopLeft" format="boolean" />
+    <attr name="roundTopRight" format="boolean" />
+    <attr name="roundBottomRight" format="boolean" />
+    <attr name="roundBottomLeft" format="boolean" />
+    <attr name="roundWithOverlayColor" format="color" />
+    <attr name="roundingBorderWidth" format="dimension" />
+    <attr name="roundingBorderColor" format="color" />
+    <attr name="guidelines">
+        <enum name="off" value="0" />
+        <enum name="on" value="2" />
+        <enum name="onTouch" value="1" />
+    </attr>
+    <attr name="fixAspectRatio" format="boolean" />
+    <attr name="aspectRatioX" format="integer" />
+    <attr name="aspectRatioY" format="integer" />
+    <attr name="imageResource" format="reference" />
+    <attr name="spbStyle" format="reference" />
+    <attr name="spb_color" format="color" />
+    <attr name="spb_stroke_width" format="dimension" />
+    <attr name="spb_stroke_separator_length" format="dimension" />
+    <attr name="spb_sections_count" format="integer" />
+    <attr name="spb_speed" format="float" />
+    <attr name="spb_interpolator">
+        <enum name="spb_interpolator_accelerate" value="0" />
+        <enum name="spb_interpolator_acceleratedecelerate" value="2" />
+        <enum name="spb_interpolator_decelerate" value="3" />
+        <enum name="spb_interpolator_linear" value="1" />
+    </attr>
+    <attr name="spb_reversed" format="boolean" />
+    <attr name="spb_mirror_mode" format="boolean" />
+    <attr name="spb_colors" format="reference" />
+    <attr name="border_width" format="dimension" />
+    <attr name="border_color" format="color" />
+    <attr name="dividerWidth" format="dimension" />
+    <attr name="indicator" format="boolean" />
+    <attr name="rating" format="float" />
+    <attr name="type">
+        <enum name="normal" value="0" />
+        <enum name="small" value="1" />
+    </attr>
+    <attr name="coloredRatingBarStyle" format="reference" />
+    <attr name="coloredRatingBarStyleIndicator" format="reference" />
+    <attr name="coloredRatingBarStyleSmall" format="reference" />
+    <attr name="coloredRatingBarStyleSmallIndicator" format="reference" />
+    <attr name="vpiTabPageIndicatorStyle" format="reference" />
+    <attr name="roundColor" format="color" />
+    <attr name="roundProgressColor" format="color" />
+    <attr name="roundWidth" format="dimension" />
+    <attr name="roundProgressWidth" format="dimension" />
+    <attr name="textColor" format="color" />
+    <attr name="textSize" format="dimension" />
+    <attr name="max" format="integer" />
+    <attr name="textIsDisplayable" format="boolean" />
+    <attr name="style">
+        <enum name="FILL" value="1" />
+        <enum name="STROKE" value="0" />
+    </attr>
+    <attr name="unselectedSaturation" format="float" />
+    <attr name="unselectedScale" format="float" />
+    <attr name="maxRotation" format="integer" />
+    <attr name="scaleDownGravity" format="float" />
+    <attr name="actionDistance" format="integer">
+        <enum name="auto" value="2147483647" />
+    </attr>
+    <attr name="start_x" format="float" />
+    <attr name="start_y" format="float" />
+    <attr name="start_scale" format="float" />
+    <attr name="min_scale" format="float" />
+    <attr name="max_scale" format="float" />
+    <attr name="strict" format="boolean" />
+    <attr name="recycle" format="boolean" />
+    <attr name="totalLength" format="integer" />
+    <attr name="eachLength" format="integer" />
+    <attr name="delimiter" format="string" />
+    <attr name="placeHolder" format="string" />
+    <attr name="hasStickyHeaders" format="boolean" />
+    <attr name="isDrawingListUnderStickyHeader" format="boolean" />
+    <attr name="galleryStyle" format="reference" />
+    <attr name="spinnerStyle" format="reference" />
+    <attr name="gravity">
+        <flag name="bottom" value="0x00000050" />
+        <flag name="center" value="0x00000011" />
+        <flag name="center_horizontal" value="0x00000001" />
+        <flag name="center_vertical" value="0x00000010" />
+        <flag name="clip_horizontal" value="0x00000008" />
+        <flag name="clip_vertical" value="0x00000080" />
+        <flag name="fill" value="0x00000077" />
+        <flag name="fill_horizontal" value="0x00000007" />
+        <flag name="fill_vertical" value="0x00000070" />
+        <flag name="left" value="0x00000003" />
+        <flag name="right" value="0x00000005" />
+        <flag name="top" value="0x00000030" />
+    </attr>
+    <attr name="entries" format="reference" />
+    <attr name="corner_radius" format="dimension" />
+    <attr name="tint_color" format="color" />
+    <attr name="checked_text_color" format="color" />
+    <attr name="border_thickness" format="dimension" />
+    <attr name="border_inside_color" format="color" />
+    <attr name="border_outside_color" format="color" />
+    <attr name="isgifimage" format="boolean" />
+    <attr name="gif" format="reference" />
+    <attr name="paused" format="boolean" />
+    <attr name="borderColor" format="color" />
+    <attr name="borderWidth" format="integer" />
+    <attr name="gallery_entries" format="reference" />
+    <attr name="gallery_gravity">
+        <flag name="bottom" value="0x00000050" />
+        <flag name="center" value="0x00000011" />
+        <flag name="center_horizontal" value="0x00000001" />
+        <flag name="center_vertical" value="0x00000010" />
+        <flag name="clip_horizontal" value="0x00000008" />
+        <flag name="clip_vertical" value="0x00000080" />
+        <flag name="fill" value="0x00000077" />
+        <flag name="fill_horizontal" value="0x00000007" />
+        <flag name="fill_vertical" value="0x00000070" />
+        <flag name="left" value="0x00000003" />
+        <flag name="right" value="0x00000005" />
+        <flag name="top" value="0x00000030" />
+    </attr>
+    <attr name="galleryStyle123" format="reference" />
+    <attr name="animationDuration" format="integer" min="0" />
+    <attr name="gallery_spacing" format="dimension" />
+    <attr name="gallery_unselectedAlpha" format="float" />
+</resources>

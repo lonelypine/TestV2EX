@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:background="@drawable/ic_arrow_back_orange_n" android:layout_width="10.0dip" android:layout_height="17.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="14.0dip" />
+        <Button android:id="@id/titlebar_with_back_payorder_btn_back" android:background="@null" android:layout_width="88.0dip" android:layout_height="44.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/TextColorGray" android:gravity="center" android:id="@id/titlebar_with_back_payorder_txt_title" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/payOrder" android:singleLine="true" android:layout_centerHorizontal="true" />
+        <TextView android:background="@color/low_black" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/titlebar_with_back_payorder_btn_back" />
+    </RelativeLayout>
+    <ScrollView android:background="@color/grey_white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/low_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/orderNum" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/middle_black" android:gravity="center_vertical" android:id="@id/activity_pay_order_txt_orderNum" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+                </LinearLayout>
+                <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/low_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/needMoney" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/orange_yellow" android:gravity="center_vertical" android:id="@id/activity_pay_order_txt_needMoney" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+                </LinearLayout>
+                <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10.0sp" android:textColor="@color/low_black" android:id="@id/activity_pay_order_purchase_pay_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/payNote" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/low_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/choosePayType" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/shape_circle_corner_white_stroke_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <RelativeLayout android:id="@id/activity_pay_order_rl_quickpay_container" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <ImageView android:id="@id/activity_pay_order_rl_quickpay_img" android:layout_width="28.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_quickpayment" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/TextColorGray" android:gravity="center_vertical" android:id="@id/activity_pay_order_rl_quickpay_txt" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/quickPay" android:layout_toRightOf="@id/activity_pay_order_rl_quickpay_img" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_compile_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/activity_pay_order_rl_bankcard_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <ImageView android:id="@id/activity_pay_order_rl_bankcard_img" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/middle_black" android:gravity="center_vertical" android:id="@id/activity_pay_order_rl_bankcard_txt" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/activity_pay_order_rl_bankcard_img" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/activity_pay_order_rl_bankcard_radio" android:background="@drawable/btn_selectionbox_selected" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/activity_pay_order_rl_addbankcard_container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                    <RelativeLayout android:id="@id/activity_pay_order_rl_addbankcard_button" android:background="@drawable/shape_btn_middle_blue_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/addBankCard" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/activity_pay_order_rl_getchecknum_container" android:background="@drawable/shape_btn_middle_blue_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <Button android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/activity_pay_order_rl_getchecknum_button" android:background="@drawable/style_btn_register" android:layout_width="100.0dip" android:layout_height="fill_parent" android:text="获取验证码" android:layout_alignParentRight="true" />
+                <EditText android:textSize="12.0sp" android:id="@id/activity_pay_order_rl_writechecknum_edit" android:background="@color/white" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/writeChecknum" android:singleLine="true" android:numeric="decimal" android:layout_toLeftOf="@id/activity_pay_order_rl_getchecknum_button" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/activity_payorder_cardbacknum" android:background="@drawable/shape_circle_white_normal" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <EditText android:textSize="12.0sp" android:textColor="@color/low_black" android:layout_gravity="center_vertical" android:id="@id/activity_payorder_cardbacknum_edit" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/creditbacknum" android:singleLine="true" android:numeric="decimal" />
+                <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/activity_payorder_cardmobilecheck" android:background="@drawable/shape_circle_white_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <RelativeLayout android:id="@id/activity_payorder_cardmobilecheck_button_container" android:background="@drawable/shape_btn_middle_blue_normal" android:layout_width="90.0dip" android:layout_height="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true">
+                    <Button android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/activity_payorder_cardmobilecheck_button" android:background="@drawable/style_btn_register" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/getVirifyCode" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <EditText android:textSize="12.0sp" android:textColor="@color/low_black" android:layout_gravity="center_vertical" android:id="@id/activity_payorder_cardmobilecheck_edit" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:hint="@string/writeChecknum" android:singleLine="true" android:numeric="decimal" android:layout_toLeftOf="@id/activity_payorder_cardmobilecheck_button_container" />
+                <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/activity_pay_order_rl_pay_container" android:background="@drawable/shape_btn_login_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="@color/low_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/otherPayType" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/shape_circle_corner_white_stroke_grey" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <RelativeLayout android:id="@id/activity_pay_order_rl_zhifubao_container" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <ImageView android:id="@id/activity_pay_order_rl_zhifubao_img" android:layout_width="37.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_paypal" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/TextColorGray" android:gravity="center_vertical" android:id="@id/activity_pay_order_rl_zhifubao_txt" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/paypal" android:layout_toRightOf="@id/activity_pay_order_rl_zhifubao_img" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/activity_pay_order_rl_zhifubao_radio" android:background="@drawable/ic_compile_normal" android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                <RelativeLayout android:id="@id/activity_pay_order_rl_wechat_container" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <ImageView android:id="@id/activity_pay_order_rl_wechat_img" android:layout_width="37.0dip" android:layout_height="32.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_wechat_pay" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/TextColorGray" android:gravity="center_vertical" android:id="@id/activity_pay_order_rl_wechat_txt" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/wechatpay" android:layout_toRightOf="@id/activity_pay_order_rl_wechat_img" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/activity_pay_order_rl_wechat_radio" android:background="@drawable/ic_compile_normal" android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                <RelativeLayout android:id="@id/activity_pay_order_rl_yinlian_container" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <ImageView android:id="@id/activity_pay_order_rl_yinlian_img" android:layout_width="37.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_unionpal" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/TextColorGray" android:gravity="center_vertical" android:id="@id/activity_pay_order_rl_yinlian_txt" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/unionpal" android:layout_toRightOf="@id/activity_pay_order_rl_yinlian_img" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/activity_pay_order_rl_yinlian_radio" android:background="@drawable/ic_compile_normal" android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="30.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/low_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付有问题？拨打" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/middle_blue" android:id="@id/activity_pay_order_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4000-910-910" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_detailed_category_grade_container" android:background="@color/gradeColor" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:background="@color/drawCashPressedColor" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        <TextView android:id="@id/item_detailed_category_grade_right" android:background="@color/drawCashPressedColor" android:layout_width="1.0px" android:layout_height="48.0dip" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/item_detailed_category_grade_iv" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="10.0dip" android:scaleType="centerInside" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/middle_black" android:id="@id/item_detailed_category_grade_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:singleLine="true" android:layout_toRightOf="@id/item_detailed_category_grade_iv" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

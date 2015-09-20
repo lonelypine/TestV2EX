@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:layout_width="165.0dip" android:layout_height="120.0dip" android:src="@drawable/qidongye_n" />
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+        <ImageView android:visibility="gone" android:layout_width="121.0dip" android:layout_height="39.0dip" android:layout_marginBottom="60.0dip" android:src="@drawable/baidu" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/gray_400_n" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:text="©genshuixue.com" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_100_n" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.genshuixue.student.view.LoadingView android:id="@id/fragment_course_table_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/fragment_course_table_content_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/fragment_course_timetable_viewPager" android:background="@color/grey_white" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:flipInterval="30" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fragment_course_timetable_noteacherororder_container" android:background="@color/transment_black_low" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/fragment_course_timetable_noteacher_container" android:background="@drawable/shape_circle_corner_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginRight="45.0dip">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="124.0dip" android:layout_height="124.0dip" android:layout_marginTop="25.0dip" android:src="@drawable/ic_mascot" android:scaleType="fitCenter" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/searchSuitSelfTeacherToMananerYourCourse" />
+                <RelativeLayout android:id="@id/fragment_course_time_table_searchteacher" android:background="@drawable/shape_btn_login_normal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/searchTeacher" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/fragment_course_time_table_findteacher" android:background="@drawable/shape_circle_corner_white_storke_blue" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/middle_blue" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quickFindTeacher" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/fragment_course_time_table_call" android:background="@drawable/shape_circle_corner_white_stroke_grey" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="20.0dip" android:src="@drawable/ic_phone_normal" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/serviceTel" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/fragment_course_timetable_noorder_container" android:background="@drawable/shape_circle_corner_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginRight="45.0dip">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="124.0dip" android:layout_height="124.0dip" android:layout_marginTop="25.0dip" android:src="@drawable/ic_mascot1" android:scaleType="fitCenter" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/qiuckWatchMyTeacher" />
+                <RelativeLayout android:id="@id/fragment_course_time_table_watch_myteacher" android:background="@drawable/shape_btn_login_normal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watchMyTeacher" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/fragment_my_course_table_content_container_login" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

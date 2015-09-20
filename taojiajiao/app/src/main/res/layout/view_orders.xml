@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/gray_100_n" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.genshuixue.student.view.SegmentView android:id="@id/view_orders_segmentView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/view_orders_noNetContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/view_orders_segmentView">
+        <com.genshuixue.student.view.NoNetWorkView android:id="@id/view_orders_noNetWorkView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/view_orders_viewContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/view_orders_segmentView" />
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/view_orders_refreshView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/view_orders_segmentView">
+        <com.genshuixue.student.view.LoadMoreListView android:id="@id/view_orders_listView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/view_orders_segmentView" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bjhl="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <com.genshuixue.student.view.CircleImageView android:id="@id/item_im_group_teacher_avatar" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/img_head_default" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="50.0dip" android:layout_toRightOf="@id/item_im_group_teacher_avatar" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/TextColorGray" android:id="@id/item_im_group_teacher_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="朱磊老师" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/low_black" android:id="@id/item_im_group_teacher_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="15小时后开始上课" />
+        </LinearLayout>
+        <ImageView android:id="@id/item_im_group_teacher_phone" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_small_orange_yuan_phone" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

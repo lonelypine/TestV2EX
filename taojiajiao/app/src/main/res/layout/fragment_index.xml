@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/backColor_index_category" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.genshuixue.student.view.PullLayout android:id="@id/fragment_index_pulllayout" android:background="@color/white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/fragment_index_txt_focus" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.genshuixue.student.view.MyGallery android:id="@id/fragment_index_gallery" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/fragment_index_dotContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginBottom="48.0dip" android:layout_alignBottom="@id/fragment_index_gallery" />
+            <FrameLayout android:id="@id/fragment_index_bottom" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/fragment_index_gallery">
+                <LinearLayout android:orientation="vertical" android:id="@id/fragment_index_content" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.genshuixue.student.view.IndexFragmentCategoryView android:id="@id/fragment_index_categoryView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <RelativeLayout android:background="@color/backColor_index_category" android:layout_width="fill_parent" android:layout_height="58.0dip" />
+                </LinearLayout>
+            </FrameLayout>
+            <RelativeLayout android:id="@id/fragment_index_search" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignBottom="@id/fragment_index_gallery">
+                <RelativeLayout android:background="@drawable/input_white_searchbox" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_centerVertical="true">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/blue_text" android:gravity="center" android:id="@id/fragment_index_search_txt_cityname" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:text="北京" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/fragment_index_search_img_arrowdown" android:layout_width="7.0dip" android:layout_height="3.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_lightgray_down" android:layout_toRightOf="@id/fragment_index_search_txt_cityname" android:layout_centerVertical="true" />
+                    <TextView android:id="@id/fragment_index_search_txtlable_line" android:background="@color/stroke_grey" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_toRightOf="@id/fragment_index_search_img_arrowdown" />
+                    <EditText android:textSize="14.0sp" android:textColor="@color/middle_black" android:id="@id/fragment_index_search_edit_search" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" android:singleLine="true" android:layout_toRightOf="@id/fragment_index_search_img_search" />
+                    <ImageView android:id="@id/fragment_index_search_img_search" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_search_gray" android:layout_toRightOf="@id/fragment_index_search_txtlable_line" android:layout_alignTop="@id/fragment_index_search_edit_search" android:layout_alignBottom="@id/fragment_index_search_edit_search" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.genshuixue.student.view.PullLayout>
+    <RelativeLayout android:id="@id/fragment_index_toSignIn_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="61.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/fragment_index_toSignIn" android:background="@color/orange_yellow_transparent" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="@string/toSignInHint" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="8.0dip" android:layout_height="13.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_arrow_white_small" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="44.0dip" android:layout_height="28.0dip" android:layout_marginLeft="20.0dip" android:layout_marginBottom="-7.0dip" android:src="@drawable/ic_mascot3" android:layout_above="@id/fragment_index_toSignIn" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/fragment_index_titleContainer" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <Button android:id="@id/fragment_index_btnBackGround" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:background="@drawable/shape_circle_corner_white_stroke_grey" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0sp" android:textColor="@color/blue_text" android:gravity="center" android:id="@id/fragment_index_txt_cityname" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:text="北京" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/fragment_index_img_arrowdown" android:layout_width="7.0dip" android:layout_height="3.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_lightgray_down" android:layout_toRightOf="@id/fragment_index_txt_cityname" android:layout_centerVertical="true" />
+            <TextView android:id="@id/fragment_index_txtlable_line" android:background="@color/stroke_grey" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_toRightOf="@id/fragment_index_img_arrowdown" />
+            <EditText android:textSize="14.0sp" android:textColor="@color/middle_black" android:id="@id/fragment_index_edit_down" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" android:singleLine="true" android:layout_toLeftOf="@id/fragment_index_edit_down" android:layout_toRightOf="@id/fragment_index_img_search" />
+            <ImageView android:id="@id/fragment_index_img_search" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_search_gray" android:layout_toRightOf="@id/fragment_index_txtlable_line" android:layout_alignTop="@id/fragment_index_edit_down" android:layout_alignBottom="@id/fragment_index_edit_down" android:layout_centerVertical="true" />
+            <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/fragment_index_btn_search" android:background="@drawable/shape_right_circle_corner_orange" android:layout_width="50.0dip" android:layout_height="fill_parent" android:text="@string/search" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ImageView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/gray_600_n" android:gravity="center|left" android:id="@id/view_all_category_dropdown_txt" android:background="@color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="切换科目" android:singleLine="true" />
+    <Button android:id="@id/view_all_category_dropdown_btn_up" android:background="@drawable/item_w_ll_n" android:layout_width="34.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" />
+    <ImageView android:layout_width="13.0dip" android:layout_height="8.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="11.0dip" android:src="@drawable/ic_arrow_up_gray_n" android:layout_alignParentRight="true" />
+    <View android:id="@id/view_all_category_dropdown_line" android:background="@color/gray_200_n" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/view_all_category_dropdown_txt" />
+    <GridView android:id="@id/view_all_category_dropdown_grid" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:numColumns="3" android:layout_below="@id/view_all_category_dropdown_line" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.genshuixue.student.view.CircleImageView android:id="@id/iv_userhead" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/high_black" android:gravity="center|left" android:autoLink="web" android:id="@id/tv_chatcontent" android:background="@drawable/bg_speech_white_nor" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxWidth="225.0dip" android:layout_toLeftOf="@id/iv_userhead" android:layout_centerVertical="true" android:lineSpacingExtra="2.0dip" />
+        <com.genshuixue.student.view.GifMovieView android:id="@id/iv_sendGif" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" android:layout_toLeftOf="@id/iv_userhead" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/msg_status" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/msg_state_failed_resend" android:layout_toLeftOf="@id/tv_chatcontent" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:id="@id/tv_ack" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/tv_chatcontent" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:id="@id/tv_delivered" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/tv_chatcontent" android:layout_centerVertical="true" />
+        <ProgressBar android:id="@id/pb_sending" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_toLeftOf="@id/tv_chatcontent" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

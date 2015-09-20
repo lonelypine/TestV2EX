@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_circle_corner_white" android:layout_width="fill_parent" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/activity_sex_man" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textColor="@color/middle_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/man" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <RelativeLayout android:id="@id/activity_sex_woman" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textColor="@color/middle_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/woman" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

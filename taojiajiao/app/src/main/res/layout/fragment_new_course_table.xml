@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.genshuixue.student.view.SegmentedGroup android:gravity="center" android:orientation="horizontal" android:id="@id/fragment_new_course_table_segment" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RadioButton android:textSize="14.0sp" android:id="@id/fragment_new_course_table_segment_btn_course" android:layout_width="75.0dip" android:layout_height="28.0dip" android:checked="true" android:text="课程" style="@style/RadioButton" />
+            <RadioButton android:textSize="14.0sp" android:id="@id/fragment_new_course_table_segment_btn_courseTable" android:layout_width="75.0dip" android:layout_height="28.0dip" android:text="课表" style="@style/RadioButton" />
+        </com.genshuixue.student.view.SegmentedGroup>
+        <com.genshuixue.student.view.RefreshView android:textSize="16.0sp" android:textColor="@color/blue_text" android:gravity="center" android:id="@id/fragment_new_course_table_txt_refresh" android:background="@drawable/ic_refresh_n" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:background="@color/gray_300_n" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:id="@id/fragment_new_course_table_ll_contentContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_100_n" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_with_back" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="10.0dip" android:background="@drawable/shape_teacher_usable_time_blue" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/gray_400_n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/teacherUsableTime" />
+    </LinearLayout>
+    <TableLayout android:background="@color/gray_200_n" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:orientation="horizontal" android:id="@id/activity_teacher_usable_time_row_weekdays" android:layout_width="fill_parent" android:layout_height="29.0dip" android:layout_marginTop="0.5sp" android:layout_marginBottom="0.5sp">
+            <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:gravity="center" android:id="@id/activity_teacher_usable_time_row_weekdays_monday" android:background="@color/gray_50_n" android:layout_width="fill_parent" android:layout_height="29.0dip" android:layout_marginRight="0.5sp" android:text="周一" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:gravity="center" android:id="@id/activity_teacher_usable_time_row_weekdays_tuesday" android:background="@color/gray_50_n" android:layout_width="fill_parent" android:layout_height="29.0dip" android:layout_marginRight="0.5sp" android:text="周二" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:gravity="center" android:id="@id/activity_teacher_usable_time_row_weekdays_wednesday" android:background="@color/gray_50_n" android:layout_width="fill_parent" android:layout_height="29.0dip" android:layout_marginRight="0.5sp" android:text="周三" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:gravity="center" android:id="@id/activity_teacher_usable_time_row_weekdays_thursday" android:background="@color/gray_50_n" android:layout_width="fill_parent" android:layout_height="29.0dip" android:layout_marginRight="0.5sp" android:text="周四" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:gravity="center" android:id="@id/activity_teacher_usable_time_row_weekdays_friday" android:background="@color/gray_50_n" android:layout_width="fill_parent" android:layout_height="29.0dip" android:layout_marginRight="0.5sp" android:text="周五" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:gravity="center" android:id="@id/activity_teacher_usable_time_row_weekdays_saturday" android:background="@color/gray_50_n" android:layout_width="fill_parent" android:layout_height="29.0dip" android:layout_marginRight="0.5sp" android:text="周六" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:gravity="center" android:id="@id/activity_teacher_usable_time_row_weekdays_sunday" android:background="@color/gray_50_n" android:layout_width="fill_parent" android:layout_height="29.0dip" android:text="周日" android:layout_weight="1.0" />
+        </TableRow>
+        <TableRow android:orientation="horizontal" android:id="@id/activity_teacher_usable_time_row_morning_container" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginBottom="0.5sp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="上午" />
+                <TextView android:layout_gravity="center" android:id="@id/activity_teacher_usable_time_row_morning_monday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="上午" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_morning_tuesday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="上午" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_morning_wednesday" android:background="@color/blue_200_n" android:visibility="invisible" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="上午" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_morning_thursday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="上午" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_morning_friday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="上午" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_morning_satursday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="上午" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_morning_sunday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:orientation="horizontal" android:id="@id/activity_teacher_usable_time_row_afternoon_container" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginBottom="0.5sp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="下午" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_afternoon_monday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="下午" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_afternoon_tuesday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="下午" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_afternoon_wednesday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="下午" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_afternoon_thursday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="下午" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_afternoon_friday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="下午" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_afternoon_satursday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="下午" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_afternoon_sunday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:orientation="horizontal" android:id="@id/activity_teacher_usable_time_row_evening_container" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginBottom="0.5sp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="晚上" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_evening_monday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="晚上" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_evening_tuesday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="晚上" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_evening_wednesday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="晚上" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_evening_thursday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="晚上" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_evening_friday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="0.5sp" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="晚上" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_evening_satursday" android:background="@color/blue_200_n" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="晚上" />
+                <TextView android:id="@id/activity_teacher_usable_time_row_evening_sunday" android:background="@color/blue_200_n" android:visibility="invisible" android:layout_width="25.0dip" android:layout_height="1.5sp" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/activity_teacher_usable_time_teacher_message_container" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="44.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/gray_400_n" android:layout_gravity="center|left|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/teacherUsableTimeMessage" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/red_n" android:layout_gravity="center|left|top" android:id="@id/activity_teacher_usable_time_teacher_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="去我话都不会变凤凰不股份和价格变化根本不把恢复笔记本房价还不放假好吧回家啊暴富就换本换本" />
+    </LinearLayout>
+</LinearLayout>

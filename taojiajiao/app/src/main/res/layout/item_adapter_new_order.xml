@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_100_n" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_whiteshadows" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/item_adapter_new_order_txtlable_order" android:background="@drawable/ic_label_white_cur" android:layout_width="85.0dip" android:layout_height="18.0dip" android:layout_marginTop="10.0dip" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/middle_black" android:gravity="center" android:id="@id/item_adapter_new_order_txt_courseType" android:layout_width="85.0dip" android:layout_height="18.0dip" android:layout_marginTop="10.0dip" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/orange_yellow" android:id="@id/item_adapter_new_order_txt_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="75.0dip">
+            <ImageView android:id="@id/item_adapter_new_order_img_avatar" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_launcher" />
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/frame_avatar" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0" android:layout_toRightOf="@id/item_adapter_new_order_img_avatar">
+                <TextView android:textSize="12.0sp" android:textColor="@color/middle_black" android:gravity="bottom" android:id="@id/item_adapter_new_order_txt_name" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="sdf" android:singleLine="true" android:layout_weight="1.0" />
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/item_adapter_new_order_middleContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/high_black" android:gravity="center_vertical" android:id="@id/item_adapter_new_order_txt_courseName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/item_adapter_new_order_txt_price" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/high_black" android:gravity="center_vertical" android:id="@id/item_adapter_new_order_txt_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="top" android:orientation="horizontal" android:id="@id/item_adapter_new_order_bottomContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/middle_black" android:gravity="center_vertical" android:id="@id/item_adapter_new_order_txt_Hours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/item_adapter_new_order_txt_Num" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/middle_black" android:gravity="center_vertical" android:id="@id/item_adapter_new_order_txt_Num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="34.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/low_black" android:id="@id/item_adapter_new_order_txtlable_totalPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="总价:" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/orange_yellow" android:id="@id/item_adapter_new_order_txt_totalPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="90.0dip" android:singleLine="true" android:layout_toRightOf="@id/item_adapter_new_order_txtlable_totalPrice" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/item_adapter_new_order_rl_btnContainer" android:paddingLeft="0.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <Button android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/item_adapter_new_order_btn_red" android:background="@drawable/style_btn_comment" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="27.0dip" />
+                <Button android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/item_adapter_new_order_btn_blue" android:background="@drawable/style_btn_register" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="27.0dip" />
+                <Button android:textSize="12.0sp" android:textColor="@color/middle_black" android:id="@id/item_adapter_new_order_btn_white" android:background="@drawable/style_btn_drawcash" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="27.0dip" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

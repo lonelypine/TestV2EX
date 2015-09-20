@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/ic_locate_teacher_small" android:layout_width="72.0dip" android:layout_height="44.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/orange_yellow" android:gravity="center" android:id="@id/view_map_label_one_title" android:layout_width="fill_parent" android:layout_height="25.0dip" android:text="测试测试" android:maxLength="4" />
+    </RelativeLayout>
+</RelativeLayout>

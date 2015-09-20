@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.genshuixue.student.view.LoadMoreListView android:id="@id/fragment_teacher_comment_lv" android:background="@drawable/bg_gray_corner" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:listSelector="@android:color/transparent" android:divider="@null" />
+    <include android:id="@id/fragment_teacher_comment_no_data_view" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/view_no_comment" />
+</FrameLayout>

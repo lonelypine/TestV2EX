@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/dialog_qrcode_share_container" android:background="@drawable/shape_dialog_qrcode_n" android:layout_width="270.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/dialog_qrcode_share_rl_title" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/gray_600_n" android:id="@id/dialog_qrcode_share_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="张静" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/gray_400_n" android:id="@id/dialog_qrcode_share_tv_postfix" android:paddingLeft="8.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/titlepostfix_n" />
+    </LinearLayout>
+    <TextView android:textSize="15.0sp" android:textColor="@color/gray_400_n" android:id="@id/dialog_qrcode_share_txt_down" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/titlepostfix_n" />
+    <ImageView android:id="@id/dialog_qrcode_share_iv" android:layout_width="200.0dip" android:layout_height="200.0dip" android:src="@drawable/ic_detail_grahpic_n" android:scaleType="center" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/transparent" android:layout_width="220.0dip" android:layout_height="34.0dip" android:layout_marginBottom="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/blue_n" android:gravity="center" android:id="@id/dialog_qrcode_share_share" android:background="@drawable/shape_dialog_share_n" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/share_n" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/orange_n" android:gravity="center" android:id="@id/dialog_qrcode_share_save" android:background="@drawable/shape_dialog_save_n" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:text="@string/saveToAlbum_n" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

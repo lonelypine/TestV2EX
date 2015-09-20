@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.genshuixue.student.view.commentphoto.RangcleRelaLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_adapter_grid_photoview_img_add" android:layout_width="43.0dip" android:layout_height="43.0dip" android:src="@drawable/ic_addphotos" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/item_adapter_grid_photoview_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/style_btn_dotline" android:scaleType="fitXY" />
+    <ImageView android:id="@id/item_adapter_grid_photoview_img_trans" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/shape_black_50p" />
+    <ProgressBar android:id="@id/item_adapter_grid_photoview_bar" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/item_adapter_grid_photoview_txt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上传失败" android:layout_centerInParent="true" />
+</com.genshuixue.student.view.commentphoto.RangcleRelaLayout>

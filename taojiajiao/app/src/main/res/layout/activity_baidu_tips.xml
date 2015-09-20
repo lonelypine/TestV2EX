@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_circle_corner_white" android:layout_width="280.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/high_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="46.0dip" android:text="温馨提示" />
+    <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <Button android:textSize="14.0sp" android:textColor="@color/orange_yellow" android:gravity="center" android:id="@id/activity_baidu_tips_btn_toBaidu" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="46.0dip" android:text="返回百度搜索" />
+    <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <Button android:textSize="14.0sp" android:textColor="@color/orange_yellow" android:gravity="center" android:id="@id/activity_baidu_tips_btn_stay" android:background="@null" android:layout_width="fill_parent" android:layout_height="46.0dip" android:text="留在跟谁学" />
+</LinearLayout>

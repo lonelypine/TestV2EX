@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:background="@drawable/ic_arrow_back_orange_n" android:layout_width="10.0dip" android:layout_height="17.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="14.0dip" />
+                <Button android:id="@id/titlebar_with_back_drawcash_btn_back" android:background="@null" android:layout_width="88.0dip" android:layout_height="44.0dip" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/TextColorGray" android:gravity="center" android:id="@id/titlebar_with_back_drawcash_txt_title" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/boundcard" android:singleLine="true" android:layout_centerHorizontal="true" />
+                <View android:background="@color/low_black" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/titlebar_with_back_drawcash_btn_back" />
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/drawcash_warn" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/drawcash_warn_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/drawcash_warntext" android:layout_centerInParent="true" />
+                <View android:background="@color/drawcash_warn_txt" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/activity_draw_cash_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="55.0dip">
+                        <ImageView android:id="@id/activity_drawcash_bankcard_img" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/activity_drawcash_bankcard_img" android:layout_centerVertical="true">
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/high_black" android:id="@id/activity_drawcash_bankcard_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/low_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/activity_drawcash_bankcard_name" android:layout_alignBottom="@id/activity_drawcash_bankcard_name" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/high_black" android:id="@id/activity_drawcash_bankcard_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/activity_drawcash_bankcard_name" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <TextView android:textSize="12.0sp" android:textColor="@color/TextColorGray" android:id="@id/activity_drawcash_bankleftinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="请填写银行预留信息" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/activity_drawcash_write_container" android:background="@drawable/shape_circle_corner_white_stroke_grey" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="44.0dip">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/high_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/activity_drawcash_name_txt" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="姓名" />
+                            <EditText android:textSize="14.0sp" android:textColor="@color/low_black" android:layout_gravity="center_vertical" android:id="@id/activity_drawcash_name_edit" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="82.0dip" android:hint="您的姓名" />
+                        </RelativeLayout>
+                        <View android:background="@color/drawCashPressedColor" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="44.0dip">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/high_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/activity_drawcash_stu_id_txt" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="身份证" />
+                            <EditText android:textSize="14.0sp" android:textColor="@color/low_black" android:layout_gravity="center_vertical" android:id="@id/activity_drawcash_stu_id_edit" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="82.0dip" android:hint="您的身份证" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/activity_drawcash_read_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/high_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="姓名" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/high_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/activity_drawcash_stu_name_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="82.0dip" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/high_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/activity_drawcash_ifispassport" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="身份证" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/high_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/activity_drawcash_stu_name_id_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="82.0dip" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/activity_drawcash_warn_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/ic_prompt" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/addBankCard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="后续只能提现到该持卡人的银行卡" />
+                    </LinearLayout>
+                    <RelativeLayout android:id="@id/activity_drawcash_choosebankzone_container" android:background="@drawable/shape_circle_corner_white_stroke_grey" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_margin="10.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/high_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/activity_drawcash_banklocation_txt" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="开户行地区" android:layout_centerVertical="true" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/low_black" android:id="@id/activity_drawcash_banklocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="请选择开户行所在城市" android:layout_toRightOf="@id/activity_drawcash_banklocation_txt" android:layout_centerVertical="true" />
+                        <ImageView android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/ic_compile_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/activity_drawcash_makesure_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/ic_prompt" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/addBankCard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="50.0dip" android:text="您已通过实名认证，请确认与当前银行卡户主姓名一致" />
+                    </LinearLayout>
+                    <RelativeLayout android:id="@id/activity_drawcash_moblienum_container" android:background="@drawable/shape_circle_white_normal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/high_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/activity_drawcash_moblienum_txt" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机号" android:layout_centerVertical="true" />
+                        <EditText android:textSize="14.0sp" android:textColor="@color/low_black" android:layout_gravity="center_vertical" android:id="@id/activity_drawcash_moblienum_edit" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:hint="请输入银行预留手机" android:layout_toRightOf="@id/activity_drawcash_moblienum_txt" android:inputType="phone" />
+                        <ImageView android:id="@id/activity_drawcash_help_img" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_doubt" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/activity_drawcash_cardmobilecheck" android:background="@drawable/shape_circle_white_normal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+                        <RelativeLayout android:id="@id/activity_drawcash_cardmobilecheck_button_container" android:background="@drawable/shape_btn_middle_blue_normal" android:layout_width="90.0dip" android:layout_height="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true">
+                            <Button android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/activity_drawcash_cardmobilecheck_button" android:background="@drawable/style_btn_register" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/getVirifyCode" android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <TextView android:textSize="14.0sp" android:textColor="@color/high_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/activity_drawcash_cardmobilecheck_txt" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="验证码" android:layout_centerVertical="true" />
+                        <EditText android:textSize="14.0sp" android:textColor="@color/low_black" android:layout_gravity="center_vertical" android:id="@id/activity_drawcash_cardmobilecheck_edit" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:hint="请输入短信验证码" android:layout_toLeftOf="@id/activity_drawcash_cardmobilecheck_button_container" android:layout_toRightOf="@id/activity_drawcash_cardmobilecheck_txt" />
+                        <View android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/activity_drawcash_note_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/ic_prompt" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/addBankCard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="为了验证银行卡的有效性，绑卡时将从你的银行卡扣除0.01元，绑卡成功后自动返还到你的平台账户，不会造成你的损失" />
+                    </LinearLayout>
+                    <RelativeLayout android:id="@id/activity_boundcard_drawcash" android:background="@drawable/shape_btn_login_normal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="绑定" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="30.0dip">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/low_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="绑卡有问题？拨打" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/middle_blue" android:id="@id/activity_draw_cash_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4000-910-910" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/activity_drawcash_help_container" android:background="@color/transment_black_low" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/shape_circle_white_normal" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/middle_black" android:gravity="center" android:id="@id/activity_drawcash_help_container_txt" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="@string/drawcash_warntext" />
+                <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/activity_drawcash_help_container_btn" android:background="@drawable/shape_btn_bottom_yellow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="知道了" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

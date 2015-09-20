@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/titlebar_with_back_white" />
+    <TextView android:textColor="@color/middle_black" android:gravity="center" android:background="@color/grey_white" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/addBankCardInfo" />
+    <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/activity_drawcash_add_bankcard_bankinfo_banknameContainer" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:id="@id/activity_drawcash_add_bankcard_bankinfo_txtlable_bankname" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/bankName" android:singleLine="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/activity_drawcash_add_bankcard_bankinfo_txt_bankname" android:background="@null" android:paddingLeft="80.0dip" android:paddingRight="80.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        <ImageView android:id="@id/activity_drawcash_add_bankcard_bankinfo_img_username" android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_small_shallowchoose_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/activity_drawcash_add_bankcard_bankinfo_locationContainer" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:id="@id/activity_drawcash_add_bankcard_bankinfo_txtlable_location" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/openAccountCity" android:singleLine="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/activity_drawcash_add_bankcard_bankinfo_txt_location" android:background="@null" android:paddingLeft="80.0dip" android:paddingRight="80.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        <ImageView android:id="@id/activity_drawcash_add_bankcard_bankinfo_img_location" android:layout_width="6.0dip" android:layout_height="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_small_shallowchoose_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/activity_drawcash_add_bankcard_bankinfo_btn_done" android:background="@drawable/style_btn_login" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_margin="10.0dip" android:text="@string/done" />
+</LinearLayout>

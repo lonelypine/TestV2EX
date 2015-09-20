@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="expression_filename">
+        <item>emoji_smile</item>
+        <item>emoji_exhausted</item>
+        <item>emoji_proud</item>
+        <item>emoji_embarrassed</item>
+        <item>emoji_giggle</item>
+        <item>emoji_cry</item>
+        <item>emoji_naughty</item>
+        <item>emoji_doubt</item>
+        <item>emoji_surprise</item>
+        <item>emoji_powerful</item>
+        <item>emoji_worship</item>
+        <item>emoji_struggle</item>
+        <item>emoji_weighs</item>
+        <item>emoji_appearance</item>
+        <item>emoji_speechless</item>
+        <item>emoji_heartstopper</item>
+    </string-array>
+    <string-array name="expression_name">
+        <item>微笑</item>
+        <item>好困</item>
+        <item>得意</item>
+        <item>撇嘴</item>
+        <item>憨笑</item>
+        <item>大哭</item>
+        <item>调皮</item>
+        <item>疑问</item>
+        <item>惊讶</item>
+        <item>厉害</item>
+        <item>崇拜</item>
+        <item>奋战</item>
+        <item>晕</item>
+        <item>色</item>
+        <item>无语</item>
+        <item>衰</item>
+    </string-array>
+    <string-array name="spinner_resourse">
+        <item>老师上门</item>
+        <item>学生上门</item>
+        <item>协商地点</item>
+        <item>在线教学</item>
+    </string-array>
+</resources>

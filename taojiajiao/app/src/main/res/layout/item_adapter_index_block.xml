@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/item_adapter_index_block_topContainer" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/gray_600_n" android:id="@id/item_adapter_index_block_title" android:paddingTop="22.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="热门直播" android:layout_weight="1.0" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/item_adapter_index_block_topRightContainer" android:paddingTop="22.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0" android:layout_toRightOf="@id/item_adapter_index_block_title" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/item_adapter_index_block_more_arrow" android:layout_width="8.0dip" android:layout_height="13.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/ic_arrow_next_gray_n" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/gray_400_n" android:id="@id/item_adapter_index_block_more" android:paddingBottom="-3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="查看更多" android:layout_toLeftOf="@id/item_adapter_index_block_more_arrow" android:layout_alignBottom="@id/item_adapter_index_block_more_arrow" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/item_adapter_index_block_lefttop" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" layout="@layout/item_index_block_unit" />
+            <include android:id="@id/item_adapter_index_block_righttop" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0" android:layout_toRightOf="@id/item_adapter_index_block_lefttop" android:layout_alignParentTop="true" android:layout_alignParentRight="true" layout="@layout/item_index_block_unit" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/item_adapter_index_block_leftbottom" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_weight="1.0" android:layout_below="@id/item_adapter_index_block_lefttop" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" layout="@layout/item_index_block_unit" />
+            <include android:id="@id/item_adapter_index_block_rightbottom" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="6.0dip" android:layout_weight="1.0" android:layout_toRightOf="@id/item_adapter_index_block_leftbottom" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/item_index_block_unit" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

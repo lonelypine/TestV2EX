@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_circle_corner_white" android:layout_width="fill_parent" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/activity_take_photo_camera" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/activity_take_photo_img_camera" android:layout_width="26.0dip" android:layout_height="20.0dip" android:layout_marginLeft="16.0dip" android:src="@drawable/ic_lightgray_camera" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/middle_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/takePhoto" android:layout_toRightOf="@id/activity_take_photo_img_camera" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:background="@color/stroke_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <RelativeLayout android:id="@id/activity_take_photo_album" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/activity_take_photo_img_album" android:layout_width="26.0dip" android:layout_height="20.0dip" android:layout_marginLeft="16.0dip" android:src="@drawable/ic_lightgray_pictures" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/middle_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/pickPicFromAlbum" android:layout_toRightOf="@id/activity_take_photo_img_album" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

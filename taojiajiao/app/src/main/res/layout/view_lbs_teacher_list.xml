@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/view_lbs_teacher_list_btn_hide" android:background="#3c000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/view_lbs_teacher_list_llcontainer" android:background="@color/gray_100_n" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray_400_n" android:gravity="center" android:id="@id/view_lbs_teacher_list_txt_title" android:background="@color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="老师列表" />
+        <com.genshuixue.student.view.LoadMoreListView android:id="@id/view_lbs_teacher_list_listView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/grey_white" android:divider="@null" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_empty" android:background="@color/grey_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_local_address">
+        <ImageView android:id="@id/iv_empty" android:background="@drawable/ic_emotion_faint_n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="126.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray_400_n" android:id="@id/tv_empty1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="哎呀，附近还没有老师入驻" android:layout_below="@id/iv_empty" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray_400_n" android:id="@id/tv_empty2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="换个地址试试吧:)" android:layout_below="@id/tv_empty1" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

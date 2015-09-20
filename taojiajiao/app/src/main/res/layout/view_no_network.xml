@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:background="@color/gray_100_n" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/view_no_network_img_wifi" android:layout_width="110.0dip" android:layout_height="74.0dip" android:src="@drawable/ic_find_wifi_n" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/gray_600_n" android:id="@id/view_no_network_txtlable_failed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:text="@string/dataLoadFailed" android:layout_below="@id/view_no_network_img_wifi" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/gray_400_n" android:gravity="center_horizontal" android:id="@id/view_no_network_txtlable_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/checkYourNetWorkAndClickButtonReload" android:layout_below="@id/view_no_network_txtlable_failed" />
+    <Button android:textSize="15.0sp" android:textColor="@color/gray_500_n" android:gravity="center" android:id="@id/view_no_network_btn_reload" android:background="@drawable/shape_c3_st_bg_n" android:layout_width="105.0dip" android:layout_height="40.0dip" android:layout_marginTop="50.0dip" android:text="@string/reLoad" android:layout_below="@id/view_no_network_txtlable_tips" android:layout_centerHorizontal="true" />
+</RelativeLayout>

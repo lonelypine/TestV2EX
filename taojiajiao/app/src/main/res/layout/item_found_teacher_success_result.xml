@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.genshuixue.student.view.CircleImageView android:id="@id/item_found_teacher_success_result_avatar" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/ic_emotion_default_n" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/item_found_teacher_success_result_head_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="22.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/gray_500_n" android:id="@id/item_found_teacher_success_result_head_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="张静" />
+                <ImageView android:id="@id/item_found_teacher_success_result_head_sex" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/ic_detail_woman_color_n" android:scaleType="fitXY" android:layout_toRightOf="@id/item_found_teacher_success_result_head_name" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/gray_400_n" android:ellipsize="end" android:id="@id/item_found_teacher_success_result_head_introduce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="中国人力资源和社会保障部国家级裁判员" android:singleLine="true" android:layout_toLeftOf="@id/item_found_teacher_success_result_head_goto" android:layout_below="@id/item_found_teacher_success_result_head_name" android:layout_alignParentLeft="true" />
+                <ImageView android:id="@id/item_found_teacher_success_result_head_goto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_arrow_next_gray_n" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0sp" android:src="@color/gray_200_n" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/item_found_teacher_success_result_chat_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/ic_findteacher_chat_n" android:scaleType="fitXY" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/gray_600_n" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="在线沟通" />
+                </LinearLayout>
+                <ImageView android:layout_width="1.0sp" android:layout_height="23.0dip" android:src="@color/gray_200_n" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/item_found_teacher_success_result_call_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:layout_weight="1.0">
+                    <ImageView android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/ic_findteacher_call_n" android:scaleType="fitXY" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/gray_600_n" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="免费通话" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0sp" android:src="@color/gray_200_n" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/item_found_teacher_success_result_message_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:gravity="center|left|top" android:id="@id/item_found_teacher_success_result_message_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="老师留言：" android:layout_alignTop="@id/item_found_teacher_success_result_message_text" android:layout_alignParentLeft="true" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_found_teacher_success_result_message_sound_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="18.0dip" android:layout_toRightOf="@id/item_found_teacher_success_result_message_title">
+                    <ImageView android:id="@id/item_found_teacher_success_result_message_sound" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_findteacher_voice_n" android:scaleType="fitXY" android:maxWidth="13.0dip" android:maxHeight="14.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/gray_500_n" android:gravity="center_vertical" android:id="@id/item_found_teacher_success_result_message_long" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="0'20&quot;" />
+                </LinearLayout>
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_500_n" android:gravity="center_vertical" android:id="@id/item_found_teacher_success_result_message_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="18.0dip" android:text="中国人力资源和社会保障部国家级裁判员" android:layout_toRightOf="@id/item_found_teacher_success_result_message_title" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0sp" android:src="@color/gray_200_n" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/orange_n" android:gravity="center" android:id="@id/item_found_teacher_success_result_learn" android:background="@drawable/shape_c2_s2_bg_o_n" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="购买课程" />
+</LinearLayout>

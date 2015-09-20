@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gradeColor" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_white_discount" android:layout_width="fill_parent" android:layout_height="108.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <RelativeLayout android:id="@id/item_my_coupon_container" android:background="@drawable/bg_yellow_discount" android:layout_width="fill_parent" android:layout_height="30.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/item_my_coupon_top_left" android:layout_width="78.0dip" android:layout_height="fill_parent" android:text="未使用" android:layout_alignParentLeft="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_my_coupon_watchorder_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看订单" />
+                <ImageView android:layout_width="6.0dip" android:layout_height="10.0dip" android:src="@drawable/ic_small_whitechoose_normal" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/item_my_coupon_top_right" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="有效期：2014-12-01至2015-01-31" android:singleLine="true" android:layout_toLeftOf="@id/item_my_coupon_watchorder_container" android:layout_toRightOf="@id/item_my_coupon_top_left" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/bg_white_discount_line" android:layout_width="16.0dip" android:layout_height="108.0dip" android:layout_marginLeft="70.0dip" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/orange_yellow" android:gravity="center" android:id="@id/item_my_coupon_bottom_left" android:layout_width="78.0dip" android:layout_height="fill_parent" android:layout_marginTop="30.0dip" android:text="￥300" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="30.0dip" android:layout_toRightOf="@id/item_my_coupon_bottom_left">
+            <TextView android:textSize="14.0sp" android:textColor="@color/high_black" android:id="@id/item_my_coupon_bottom_right_top" android:paddingLeft="20.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="乐闻携尔发放" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/couponTextColor" android:id="@id/item_my_coupon_bottom_right_bottom" android:paddingLeft="20.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="满100.00使用\n仅可购买乐闻携尔机构课程" android:layout_below="@id/item_my_coupon_bottom_right_top" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

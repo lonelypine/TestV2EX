@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="1.0px" android:layout_height="80.0dip" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/view_head_my_teacher_detail_orderlist_img_Avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/high_black" android:id="@id/view_head_my_teacher_detail_orderlist_txt_teacherName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="90.0dip" android:singleLine="true" android:layout_toRightOf="@id/view_head_my_teacher_detail_orderlist_img_Avatar" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/view_head_my_teacher_detail_orderlist_img_sex" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_woman" android:layout_toRightOf="@id/view_head_my_teacher_detail_orderlist_txt_teacherName" android:layout_centerVertical="true" />
+        <TextView android:id="@id/view_head_my_teacher_detail_orderlist_txt_call" android:background="@drawable/style_btn_call_teacher" android:layout_width="50.0dip" android:layout_height="34.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/view_head_my_teacher_detail_orderlist_txtlabel_line" android:background="@color/drawCashPressedColor" android:layout_width="1.0px" android:layout_height="34.0dip" android:layout_toLeftOf="@id/view_head_my_teacher_detail_orderlist_txt_call" android:layout_centerVertical="true" />
+        <TextView android:id="@id/view_head_my_teacher_detail_orderlist_txt_chat" android:background="@drawable/style_btn_tochat" android:layout_width="50.0dip" android:layout_height="34.0dip" android:layout_toLeftOf="@id/view_head_my_teacher_detail_orderlist_txtlabel_line" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/drawCashPressedColor" android:contentDescription="@null" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/view_head_my_teacher_detail_orderlist_lignt_class_lighting_container" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/view_head_my_teacher_detail_orderlist_lignt_class_open_img_container" android:layout_alignParentLeft="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/view_head_my_teacher_detail_orderlist_lignt_class_lighting_img" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ic_lightning_class_turnoff" android:scaleType="fitXY" android:contentDescription="@null" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/middle_black" android:layout_gravity="center_vertical" android:id="@id/view_head_my_teacher_detail_orderlist_lignt_class_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/ligntningDateClass" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/low_black" android:layout_gravity="center_vertical" android:id="@id/view_head_my_teacher_detail_orderlist_lignt_class_isopen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/lightningDateClassClose" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/view_head_my_teacher_detail_orderlist_lignt_class_open_img_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/view_head_my_teacher_detail_orderlist_lignt_class_open_img" android:layout_width="51.0dip" android:layout_height="31.0dip" android:src="@drawable/ic_switch_turnoff" android:scaleType="fitXY" android:contentDescription="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_circle_corner_white" android:layout_width="270.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/gray_600_n" android:gravity="center" android:id="@id/dialog_common_txt_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" />
+    <View android:background="@color/gray_200_n" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/orange_n" android:gravity="center" android:id="@id/dialog_common_txt_confirm" android:background="@drawable/btn_c3_bt_s0_bg_w" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="知道了" />
+</LinearLayout>

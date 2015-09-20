@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/activity_welcome_active_img" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+    <RelativeLayout android:background="@color/transment_black_low" android:layout_width="95.0dip" android:layout_height="34.0dip" android:layout_alignParentRight="true">
+        <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/activity_welcome_active_btnSecond" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="225.0dip" android:layout_height="60.0dip" android:src="@drawable/bg_bot" />
+    </LinearLayout>
+</RelativeLayout>
